@@ -2,24 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <time>Техномарт</time>
     </head>
     <body>
         <header class="main-header">
             <div class="upper-panel">
                 <div class="container">
                     <div class="container-inner">
-                        <a class="main-header-logo">
-                            <img src="src/images/logo.png", width="220", height="47", alt="Логотип техномаркета">
-                        </a>
+                        <p class="main-header-logo">Техномарт</p>
                         <form role="search">
                             <div class="search-control">
+                                <img src=".\images\icon-search@1X.png" width="17" height="17">
                                 <input type="search" id="site-search" name="q"
                                         placeholder="Поиск:">
                             </div>
                         </form>
-                        <a class="upper-panel-bookmark" href="#">Закладки: 0</a>
-                        <a class="upper-panel-basket" href="#">Корзина: 0</a>
+                        <a class="upper-panel-bookmark" href="#">
+                            <img src=".\images\icon-bookmark@1X.png" width="14" height="16">Закладки: 0</a>
+                        <a class="upper-panel-basket" href="#">
+                            <img src=".\images\cart-icon@1X.png" width="15" height="15"> Корзина: 0</a>
                         <a class="upper-panel-order" href="#">Оформить заказ</a>
                     </div>
                 </div>
@@ -35,13 +35,14 @@
                             </p>
                         </div>
                         <div class="column-contacts">
-                                <a href="tel:+78125550555"> +7 (812) 555-05-55 </a>
+                            <img src=".\images\icon-phone@1X.png" width="19" height="19">
+                            <a href="tel:+78125550555"> +7 (812) 555-05-55 </a>
                             <p class="address">
                                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                             </p>
                         </div>
                         <div class="column-account">
-                            <a class="log login" href="#">Войти</a>
+                            <a class="log login" href="#"><img src=".\images\icon-login@1X.png" width="20" height="17"> Войти</a>
                             <a class="log" href="#">Регистрация</a>
                         </div>
                     </div>
@@ -71,11 +72,53 @@
                             <li class="card-item new-card-item">
                                 <h3>Материалы</h2>
                                 <a class="button" href="#">На любой вкус</a>
+                                <img src=".\images\icon-1@1X.png" width="44" height="65">
                             </li>
                             <li class="card-item">
                                 <h3>Инструмент</h2>
                                 <a class="button" href="#">На все случаи</a>
+                                <img src=".\images\icon-2@1X.png" width="75" height="61">
                             </li>
+
+                            <div class="main-offer-sliders">
+                                <div class=“slide slide1">
+                                    <h2>Дрели</h2>
+                                    <p>Соседям на радость!</p>
+                                    <img src=".\images\slider 2.png" width="620" height="266">
+                                </div>
+                                <div class=“slide slide2”>
+                                    <h2>Перфораторы</h2>
+                                    <p>Настоящие мужские игрушки</p>
+                                    <img src=".\images\slider.png" width="620" height="266">
+                                </div>
+                                <span class="cards-button-back"><img src=".\images\icon-left@1X.png" width="22" height="40"> Назад</span>
+                                <span class="cards-button-next"><img src=".\images\icon-right@1X.png" width="22" height="40"> Вперед</span>
+                                <a class="button" href="#">Открыть каталог</a>
+                                <input type=“radio” name=“slider” id=“slider1” checked=“checked”>
+                                <input type=“radio” name=“slider” id=“slider2”>
+                                <div class=“slider-controls”>
+                                    <label class=“slider-control” for=“slider1”>Доставка</label>
+                                    <label class=“slider-control” for=“slider2”>Гарантия</label>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             <li class="main-offer">
                                 <div class="main-offer-title">
                                     <h2>Дрели</h2>
@@ -90,6 +133,20 @@
                                     <a class="button" href="#">Открыть каталог</a>
                                 </div>
                             </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         </ul>
                     </div>   
                     <div class="column-cards-right">   
@@ -97,14 +154,17 @@
                             <li class="card-item">
                                 <h3>Техника</h2>
                                 <a class="button" href="#">Для стройки</a>
+                                <img src=".\images\icon-3@1X.png" width="78" height="62">
                             </li>
                             <li class="card-item">
                                 <h3>Скидки 50%</h2>
                                 <a class="button" href="#">На 350 товаров</a>
+                                <img src=".\images\icon-4@1X.png" width="59" height="72">
                             </li>
                             <li class="card-item">
                                 <h3>Доставка</h2>
                                 <a class="button" href="#">Бесплатно</a>
+                                <img src=".\images\icon-5@1X.png" width="76" height="63">
                             </li>
                         </ul>
                     </div>
@@ -120,7 +180,7 @@
                 <ul class="popular-goods-list">
                     <li class="catalog-item-new">
                         <figure class="catalog-item-image">
-                            <img src="src/images/catalog-item-1.png", width="220", height="47", alt="Перфоратор BOSH BFG 9000"></a>
+                            <img src=".\images\perf-1.png", width="220", height="147", alt="Перфоратор BOSH BFG 9000"></a>
                         </figure>
                         <span class="catalog-item-buttons">
                             <a class="button button-buy" href="#">Купить</a>
@@ -134,7 +194,7 @@
                     </li>
                     <li class="catalog-item">
                         <figure class="catalog-item-image">
-                            <img src="src/images/catalog-item-2.png", width="220", height="47", alt="Перфоратор BOSCH BFG 3000"></a>
+                            <img src=".\images\perf-2.png", width="220", height="147", alt="Перфоратор BOSCH BFG 3000"></a>
                         </figure>
                         <span class="catalog-item-action-buttons">
                             <a class="button button-buy" href="#">Купить</a>
@@ -148,7 +208,7 @@
                     </li>
                     <li class="catalog-item">
                         <figure class="catalog-item-image">
-                            <img src="src/images/catalog-item-3.png", width="220", height="47", alt="Перфоратор BOSCH BFG 6000"></a>
+                            <img src=".\images\perf-3.png", width="220", height="147", alt="Перфоратор BOSCH BFG 6000"></a>
                         </figure>
                         <span class="catalog-item-buttons">
                             <a class="button catalog-button-buy" href="#">Купить</a>
@@ -162,7 +222,7 @@
                     </li>
                     <li class="catalog-item new-item">
                         <figure class="catalog-item-image">
-                            <img src="src/images/catalog-item-3.png", width="220", height="47", alt="Перфоратор BOSCH BFG 2000"></a>
+                            <img src=".\images\perf-4.png", width="220", height="147", alt="Перфоратор BOSCH BFG 2000"></a>
                         </figure>
                         <span class="catalog-item-buttons">
                             <a class="button catalog-button-buy" href="#">Купить</a>
@@ -184,42 +244,42 @@
             <ul class="popular-brand-list">
                 <li>
                     <a class="popular-brand-item" href="#">
-                        <img src="src/images/brands-item-1.png", width="200", height="100", alt="Bosh">
+                        <img src=".\images\bosch.png", width="126", height="37", alt="Bosh">
                     </a>
                 </li>
                 <li>
                     <a class="popular-brand-item" href="#">
-                        <img src="src/images/brands-item-2.png", width="200", height="100", alt="Makita">
+                        <img src=".\images\Makita.png", width="123", height="40", alt="Makita">
                     </a>
                 </li>
                 <li>
                     <a class="popular-brand-item" href="#">
-                        <img src="src/images/brands-item-3.png", width="200", height="100", alt="Dewalt">
+                        <img src=".\images\DeWALT.png", width="146", height="44", alt="Dewalt">
                     </a>
                 </li>
                 <li>
                     <a class="popular-brand-item" href="#">
-                        <img src="src/images/brands-item-4.png", width="200", height="100", alt="Interscol">
+                        <img src=".\images\interscol.png", width="184", height="32", alt="Interscol">
                     </a>
                 </li>
                 <li>
                     <a class="popular-brand-item" href="#">
-                        <img src="src/images/brands-item-5.png", width="200", height="100", alt="Hitachi">
+                        <img src=".\images\Hitachi.png", width="169", height="31", alt="Hitachi">
                     </a>
                 </li>
                 <li>
                     <a class="popular-brand-item" href="#">
-                        <img src="src/images/brands-item-6.png", width="200", height="100", alt="LG">
+                        <img src=".\images\LG.png", width="121", height="73", alt="LG">
                     </a>
                 </li>
                 <li>
                     <a class="popular-brand-item" href="#">
-                        <img src="src/images/brands-item-7.png", width="200", height="100", alt="AEG">
+                        <img src=".\images\AEG.png", width="151", height="96", alt="AEG">
                     </a>
                 </li>
                 <li>
                     <a class="popular-brand-item" href="#">
-                        <img src="src/images/brands-item-8.png", width="200", height="100", alt="Metabo">
+                        <img src=".\images\Metabo.png", width="204", height="69", alt="Metabo">
                     </a>
                 </li>
             </ul>
@@ -234,7 +294,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="sliders">
+                    <div class="bottom-sliders">
                         <div class="column-sliders">
                             <input type=“radio” name=“slider” id=“slider1” checked=“checked”>
                             <input type=“radio” name=“slider” id=“slider2”>
@@ -254,18 +314,21 @@
                                     Ведь мы неплохо заработаем, <br>
                                     поднимая его на ваш этаж!
                                 </p>
+                                <img src=".\images\slide-image-1.png" width="468" height="261">
                             </div>
                             <div class=“slide slide2”>
                                 <h2>Гарантия</h2>
                                 <p>
                                     Описание того с каким удовольствием будет предоставлена гарантия!
                                 </p>
+                                <img src=".\images\slide-image-2.png" width="389" height="283">
                             </div>
                             <div class=“slide slide3">
                                 <h2>Кредит</h2>
                                 <p>
                                     Описание самых выгодных условий предоставления кредита!
                                 </p>
+                                <img src=".\images\slide-image-3.png" width="465" height="285">
                             </div>
                         </div>
                     </div>
@@ -295,7 +358,7 @@
                             заехав в наш офис:
                         </p>
                         <button type="button" class="open-map-button">
-                            <img src="map.png/" width="200" height="200" alt="Map""> 
+                            <img src=".\images\map.png" width="300" height="158" alt="Map""> 
                         </button>
                         <a class="button full-width-button", href="#">Заблудились? Напишите нам!</a>
                     </div>
@@ -343,9 +406,9 @@
                     </div>
                     <div class="bottom-footer-column2">
                         <ul>
-                            <li><a class="socail-button" href="#">Вконтакте</a></li>
-                            <li><a class="socail-button" href="#">Фейсбук</a></li>
-                            <li><a class="socail-button" href="#">Инстаграмм</a></li>
+                            <li><a class="socail-button" href="#"><img src=".\images\vk-icon@1X.png" width="26" height="15"> Вконтакте</a></li>
+                            <li><a class="socail-button" href="#"><img src=".\images\fb-icon.png" width="12" height="22">Фейсбук</a></li>
+                            <li><a class="socail-button" href="#"><img src=".\images\insta-icon.png" width="21" height="21">Инстаграмм</a></li>
                         </ul>
                     </div>
                     <div class="bottom-footer-column3">
