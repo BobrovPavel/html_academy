@@ -1,7 +1,16 @@
-p {
-padding-left: 20px;
+html {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "PT Sans","Arial",sans-serif;
 }
+
 body {
+    min-width: 960px;
     margin: 0;
     padding: 0;
     background: #DEDEDE;
@@ -11,21 +20,159 @@ body {
     font-weight: 400px;
     color: black;
 }
-a {
-    text-decoration: none;
+.container {
+    margin: 0 auto;
+    width: 940px;
 }
+h1 {
+    margin: 0;
+    padding: 0;
+}
+.display-none {
+    display: none;
+}
+
 .site-navigation {
     background: #32425c;
     color: white;
     font-size: 17pt;
     font-family: Scala, Cuprum-Regular, AdobeInvisFont, MyriadPro-Regular;
     display: flex;
-    margin-right: 130px;
-    margin-left: 130px;
+    width: 100%;
+}
+.site-navigation a {
+    text-decoration: none;
+    color: white;
+}
+.site-navigation a:focus,
+.site-navigation a:hover {
+    color: wheat;
 }
 .site-navigation li {
     align-items: center;
-    height: 60px;
     display: flex;
-    width: 100%;    
+    height: 60px;
+    width: 100%;  
+    padding: 0 30px;  
+}
+
+.slide-slide1 {
+    background-image: url("images/slider2.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.product-categories,
+.column-cards-right ul,
+.popular-goods-list,
+.popular-brand-list,
+.upper-footer-navigation,
+.middle-footer-categories,
+.bottom-footer-column2 ul {
+    list-style: none;
+}
+
+.upper-footer,
+.middle-footer {
+    background-color: #32425c;
+    display: flex;
+}
+.bottom-footer {
+    background-color: #293449;
+}
+.upper-footer {
+    width: 100%;
+}
+.fut {
+    display: inline-flex;
+    width: 100%;
+}
+.upper-footer-navigation {
+    background: #32425c;
+    color: white;
+    font-size: 18px;
+    font-family: Scala, Cuprum-Regular, AdobeInvisFont, MyriadPro-Regular;
+    display: flex;
+    width: 100%;
+}
+.upper-footer-column1 {
+    display: flex;
+    width: 100%;
+    color: white;
+    font-size: 25pt;
+    height: 60px;
+    align-items: center;
+    font-family: Scala, Cuprum-Regular, AdobeInvisFont, MyriadPro-Regular;
+}
+.upper-footer-column1 a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.upper-footer-column2 {
+    width: 100%;
+}
+.footer-logo a{
+    display: inline-block;
+    padding: 24px 41px 9px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
+}
+.upper-footer-navigation li,
+.middle-footer-categories li {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    padding: 0 30px;  
+}
+.upper-footer-navigation a,
+.middle-footer-categories a {
+    text-decoration: none;
+    color: white;
+}
+.upper-footer-navigation a:focus,
+.upper-footer-navigation a:hover {
+    color: wheat;
+    text-decoration-line: underline;
+}
+.footer-contacts p {
+    color: white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    float: left;
+}
+.footer-contacts a {
+    text-decoration: none;
+    color: white;
+}
+.footer-contacts a:focus,
+.footer-contacts a:hover {
+    color: wheat;
+    text-decoration-line: underline;
+}
+.middle-footer-categories {
+    background: #32425c;
+    color: white;
+    font-size: 18px;
+    font-family: Scala, Cuprum-Regular, AdobeInvisFont, MyriadPro-Regular;
+    display: flex;
+}
+.middle-footer-column2,
+.middle-footer-column1 {
+    width: 100%;
+}
+.middle-footer-column2 a {
+    color: #e4be7b;
 }
