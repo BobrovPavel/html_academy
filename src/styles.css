@@ -8,7 +8,6 @@ html {
     font-style: normal;
     font-family: "PT Sans","Arial",sans-serif;
 }
-
 body {
     min-width: 960px;
     margin: 0;
@@ -28,14 +27,138 @@ h1 {
     margin: 0;
     padding: 0;
 }
+p {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
 .display-none {
     display: none;
 }
-
+.upper-panel {
+    background-color: #293449;
+    height: 42px;
+}
+.up-footer-inner {
+    display: inline-flex;
+    height: 42px;
+    width: 100%;
+}
+.up-footer-inner a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+.main-header-logo {
+    float: left;
+}
+.main-header-logo p {
+    text-transform: uppercase;
+    color: white;
+    background-color: #ee3643;
+    font-family: "Cuprum","Arial",sans-serif;
+    width: 165px;
+    padding: 11px 0 7px 55px;
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+}
+.search {
+    background: #293449;
+}
+input[type=search] {
+    background-color: #293449;
+    border: none;
+    color: white;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-size: 17px;
+    padding-top: 12px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 49px;
+}
+.header-background {
+    background-color: #f1f5f7;
+}
+.upper-info {
+    display: flex;
+}
+.column-description {
+    width: 247px;
+    float: left;
+    margin: 49px 0 40px 52px;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Cuprum","Arial",sans-serif;
+    color: #ef5c67;
+}
+.column-contacts {
+    width: 340px;
+    margin-top: 46px;
+    margin-right: 50px;
+    margin-bottom: 4px;
+    margin-left: 22px;
+}
+.column-contacts a {
+    text-decoration: none;
+    color: #e9292a;
+    font-size: 21px;
+}
+.column-account {
+    width: 340px;
+    margin-top: 46px;
+    margin-right: 50px;
+    margin-bottom: 4px;
+    margin-left: 22px;
+    display: inline-flex;
+}
+.log.login {
+    display: inline-flex;
+    width: 100%;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff; 
+    margin-top: 47px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 21px;
+    padding-top: 12px;
+    padding-right: 26px;
+    padding-left: 0px;
+    height: 32px;
+}
+.log.login a {
+    text-decoration: none;
+    color: #000;
+    font-size: 21px;
+}
+.log {
+    font-size: 21px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding-top: 12px;
+    padding-right: 25px;
+    padding-left: 23px;
+    margin-top: 47px;
+    margin-left: 50px;
+    height: 32px;
+}
 .site-navigation {
     background: #32425c;
     color: white;
-    font-size: 17pt;
+    font-size: 17px;
     font-family: Scala, Cuprum-Regular, AdobeInvisFont, MyriadPro-Regular;
     display: flex;
     width: 100%;
