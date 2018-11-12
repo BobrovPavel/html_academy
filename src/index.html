@@ -11,20 +11,21 @@
             <div class="upper-panel">
                 <div class="container">
                     <div class="up-footer-inner">
-                        <div class="main-header-logo">
-                            <p>Техномарт</p>
+                        <a class="main-header-logo">
+                            Техномарт
+                        </a>
+                        <div class="upper-panel-items">
+                            <div class="search">
+                                <form action="#">
+                                    <input type="search" id="site-search" name="q" placeholder="Поиск:">
+                                </form>
+                            </div>
+                            <a class="upper-panel-bookmark" href="#">
+                                <img src=".\images\icon-bookmark@1X.png" width="14" height="16"> Закладки: 0</a>
+                            <a class="upper-panel-basket" href="#">
+                               <img src=".\images\cart-icon@1X.png" width="15" height="15"> Корзина: 0</a>
+                            <a class="upper-panel-order" href="#">Оформить заказ</a>
                         </div>
-                        <div class="search">
-                            <form action="#">
-                                <img src=".\images\icon-search@1X.png" width="17" height="17">
-                                <input type="search" id="site-search" name="q" placeholder="Поиск:">
-                            </form>
-                        </div>
-                        <a class="upper-panel-bookmark" href="#">
-                            <img src=".\images\icon-bookmark@1X.png" width="14" height="16">Закладки: 0</a>
-                        <a class="upper-panel-basket" href="#">
-                            <img src=".\images\cart-icon@1X.png" width="15" height="15"> Корзина: 0</a>
-                        <a class="upper-panel-order" href="#">Оформить заказ</a>
                     </div>
                 </div>
             </div>
@@ -46,88 +47,101 @@
                             </p>
                         </div>
                         <div class="column-account">
-                            <div class="log login">
-                                <img src=".\images\icon-login@1X.png" width="20" height="17">
-                                <a href="#"> Войти</a>
-                            </div>
+                            <a class="log-login" href="#">Войти</a>
                             <a class="log" href="#">Регистрация</a>
                         </div>
                     </div>
+                    <nav class="site-navigation">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="company.html">Компания</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="special.html">Спецпредложения</a></li>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="main-navigation">
-                    <div class="container">
-                        <div class="navigation-container-inner">
-                            <ul class="site-navigation">
-                                <li><a href="index.html">Главная</a></li>
-                                <li><a href="company.html">Компания</a></li>
-                                <li><a href="catalog.html">Каталог</a></li>
-                                <li><a href="news.html">Новости</a></li>
-                                <li><a href="special.html">Спецпредложения</a></li>
-                                <li><a href="delivery.html">Доставка</a></li>
-                                <li><a href="contacts.html">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
             </div>
         </header>
         <main>
             <div class="cards">
                 <div class="container">
-                    <div class="column-cards-left">
-                        <ul class="product-categories">
-                            <li class="card-item new-card-item">
-                                <h3>Материалы</h2>
-                                <a class="button" href="#">На любой вкус</a>
-                                <img src=".\images\icon-1@1X.png" width="44" height="65">
-                            </li>
-                            <li class="card-item">
-                                <h3>Инструмент</h2>
-                                <a class="button" href="#">На все случаи</a>
-                                <img src=".\images\icon-2@1X.png" width="75" height="61">
-                            </li>
+                    <div class="cards-inner">
+                        <div class="column-cards-left">
+                            <ul class="cards-left">
+                                <li class="card-item-1 new-card-item">
+                                    <h3>Материалы</h2>
+                                    <a class="category-btn" href="#">На любой вкус</a>
+                                    <div class="cards-img">
+                                        <img src=".\images\icon-1@1X.png" width="44" height="65">
+                                    </div>
+                                </li>
+                                <li class="card-item-2">
+                                    <h3>Инструмент</h2>
+                                    <a class="category-btn" href="#">На все случаи</a>
+                                    <div class="cards-img">
+                                        <img src=".\images\icon-2@1X.png" width="75" height="61">
+                                    </div>
+                                </li>
+                                <li class="card-item-3">
+                                    <h3>Техника</h2>
+                                    <a class="category-btn" href="#">Для стройки</a>
+                                    <div class="cards-img">
+                                        <img src=".\images\icon-3@1X.png" width="78" height="62">
+                                    </div>
+                                </li>
+                                <li class="slider">
+                                    <input type=“radio” name=“slider” id=“slider1” checked=“checked”>
+                                    <input type=“radio” name=“slider” id=“slider2”>
+                                    <div class="slides">
+                                        <div class="slide-slide1">
+                                            <h2>Дрели</h2>
+                                            <p>Соседям на радость!</p>
+                                            <a class="button" href="#">Открыть каталог</a>
+                                        </div>
+                                        <div class="slide-slide2">
+                                            <h2>Перфораторы</h2>
+                                            <p>Настоящие мужские игрушки</p>
+                                            <img src=".\images\slider.png" width="620" height="266">
+                                            <a class="button" href="#">Открыть каталог</a>
+                                        </div>
+                                    </div>
 
-                            <div class="main-offer-sliders">
-                                <div class="slide-slide1">
-                                    <h2>Дрели</h2>
-                                    <p>Соседям на радость!</p>
-                                    <a class="button" href="#">Открыть каталог</a>
-                                </div>
-                                <div class="slide-slide2">
-                                    <h2>Перфораторы</h2>
-                                    <p>Настоящие мужские игрушки</p>
-                                    <img src=".\images\slider.png" width="620" height="266">
-                                    <a class="button" href="#">Открыть каталог</a>
-                                </div>
-                                <span class="cards-button-back">Назад</span>
-                                <span class="cards-button-next">Вперед</span>
-                                <input type=“radio” name=“slider” id=“slider1” checked=“checked”>
-                                <input type=“radio” name=“slider” id=“slider2”>
-                                <div class=“slider-controls”>
-                                    <label class=“slider-control” for=“slider1”>Point 1</label>
-                                    <label class=“slider-control” for=“slider2”>Point-2</label>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>   
-                    <div class="column-cards-right">   
-                        <ul>
-                            <li class="card-item">
-                                <h3>Техника</h2>
-                                <a class="button" href="#">Для стройки</a>
-                                <img src=".\images\icon-3@1X.png" width="78" height="62">
-                            </li>
-                            <li class="card-item">
-                                <h3>Скидки 50%</h2>
-                                <a class="button" href="#">На 350 товаров</a>
-                                <img src=".\images\icon-4@1X.png" width="59" height="72">
-                            </li>
-                            <li class="card-item">
-                                <h3>Доставка</h2>
-                                <a class="button" href="#">Бесплатно</a>
-                                <img src=".\images\icon-5@1X.png" width="76" height="63">
-                            </li>
-                        </ul>
+                                    <div class="slider-buttons">
+                                        <span class="cards-button-back">Назад</span>
+                                        <span class="cards-button-next">Вперед</span>
+                                    </div>
+                                    
+                                    <div class=“slider-controls”>
+                                        <label class=“slider-control” for=“slider1”>Point 1</label>
+                                        <label class=“slider-control” for=“slider2”>Point-2</label>
+                                    </div>
+                                </li>
+                                <li class="card-item-5">
+                                    <h3>Скидки 50%</h2>
+                                    <a class="category-btn" href="#">На 350 товаров</a>
+                                    <div class="cards-img">
+                                        <img src=".\images\icon-4@1X.png" width="59" height="72">
+                                    </div>
+                                </li>
+                                <li class="card-item-6">
+                                    <h3>Доставка</h2>
+                                    <a class="category-btn" href="#">Бесплатно</a>
+                                    <div class="cards-img">
+                                        <img src=".\images\icon-5@1X.png" width="76" height="63">
+                                    </div>
+                                </li>
+                            </ul>
+
+                            
+                        </div>   
+                        <div class="column-cards-right">   
+                            <ul>
+                                
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
