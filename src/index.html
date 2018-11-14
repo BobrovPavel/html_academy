@@ -11,20 +11,26 @@
             <div class="upper-panel">
                 <div class="container">
                     <div class="up-footer-inner">
-                        <a class="main-header-logo">
-                            Техномарт
-                        </a>
-                        <div class="upper-panel-items">
+                        <div class="main-header-logo">
+                            <a>Техномарт</a>
                             <div class="search">
-                                <form action="#">
+                                <form action="#" method="get" enctype="multipart/form-data">
                                     <input type="search" id="site-search" name="q" placeholder="Поиск:">
                                 </form>
                             </div>
-                            <a class="upper-panel-bookmark" href="#">
-                                <img src=".\images\icon-bookmark@1X.png" width="14" height="16"> Закладки: 0</a>
-                            <a class="upper-panel-basket" href="#">
-                               <img src=".\images\cart-icon@1X.png" width="15" height="15"> Корзина: 0</a>
-                            <a class="upper-panel-order" href="#">Оформить заказ</a>
+                        </div>
+                        <div class="upper-panel-items">
+                            <div>
+                                <a class="upper-panel-bookmark" href="#">
+                                    <img src=".\images\icon-bookmark@1X.png" width="14" height="16"> Закладки: 0</a>
+                            </div>
+                            <div>
+                                <a class="upper-panel-basket" href="#">
+                                <img src=".\images\cart-icon@1X.png" width="15" height="15"> Корзина: 0</a>
+                            </div>
+                            <div class="upper-panel-order">
+                                <a href="#">Оформить заказ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,7 +46,6 @@
                             </p>
                         </div>
                         <div class="column-contacts">
-                            <img src=".\images\icon-phone@1X.png" width="19" height="19">
                             <a href="tel:+78125550555"> +7 (812) 555-05-55 </a>
                             <p class="address">
                                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -92,33 +97,33 @@
                                         <img src=".\images\icon-3@1X.png" width="78" height="62">
                                     </div>
                                 </li>
+
+
+
                                 <li class="slider">
-                                    <input type=“radio” name=“slider” id=“slider1” checked=“checked”>
-                                    <input type=“radio” name=“slider” id=“slider2”>
+                                    <input type="radio" name=“slider” id=“slider1” checked=“checked”>
+                                    <input type="radio" name=“slider” id=“slider2”>
                                     <div class="slides">
-                                        <div class="slide-slide1">
+                                        <div class="slide slide1">
                                             <h2>Дрели</h2>
                                             <p>Соседям на радость!</p>
                                             <a class="button" href="#">Открыть каталог</a>
                                         </div>
-                                        <div class="slide-slide2 display-none">
+                                        <div class="slide slide2">
                                             <h2>Перфораторы</h2>
                                             <p>Настоящие мужские игрушки</p>
-                                            <img src=".\images\slider.png" width="620" height="266">
                                             <a class="button" href="#">Открыть каталог</a>
                                         </div>
                                     </div>
-
-                                    <div class="slider-buttons display-none">
-                                        <span class="cards-button-back">Назад</span>
-                                        <span class="cards-button-next">Вперед</span>
-                                    </div>
-                                    
                                     <div class=“slider-controls”>
                                         <label class=“slider-control” for=“slider1”>Point 1</label>
                                         <label class=“slider-control” for=“slider2”>Point-2</label>
                                     </div>
                                 </li>
+
+
+
+
                                 <li class="card-item-5">
                                     <h3>Скидки 50%</h2>
                                     <a class="category-btn" href="#">На 350 товаров</a>
@@ -133,13 +138,6 @@
                                         <img src=".\images\icon-5@1X.png" width="76" height="63">
                                     </div>
                                 </li>
-                            </ul>
-
-                            
-                        </div>   
-                        <div class="column-cards-right">   
-                            <ul>
-                                
                             </ul>
                         </div>
                     </div>
@@ -279,19 +277,27 @@
                             </p>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
                     <div class="bottom-sliders">
                         <div class="column-sliders">
-                            <input type="radio" name=“slider” id=“slider11” checked=“checked”>
-                            <input type="radio" name=“slider” id=“slider12”>
-                            <input type="radio" name=“slider” id=“slider13”>
+                            <input type="radio" name=“slider” id=“slider1-1” checked=“checked”>
+                            <input type="radio" name=“slider” id=“slider1-2”>
+                            <input type="radio" name=“slider” id=“slider1-3”>
                             <div class="slider-controls">
-                                <label class=“slider-control” for=“slider11”>Доставка</label>
-                                <label class=“slider-control” for=“slider12”>Гарантия</label>
-                                <label class=“slider-control” for=“slider13”>Гарантия</label>
+                                <label class="slider-control" for=“slider1-1”>Доставка</label>
+                                <label class="slider-control" for=“slider1-2”>Гарантия</label>
+                                <label class="slider-control" for=“slider1-3”>Гарантия</label>
                             </div>
                         </div>
-                        <div class="column-slides">
-                            <div class="slide slide1">
+                        <div class="column-descr">
+                            <div class="bottom-slide bottom-slide1">
                                 <h2>Доставка</h2>
                                 <p>
                                     Мы с удовольствием доставим ваш товар прямо<br>
@@ -300,22 +306,27 @@
                                     поднимая его на ваш этаж!
                                 </p>
                             </div>
-                            <div class="slide slide2 display-none">
+                            <div class="bottom-slide bottom-slide2">
                                 <h2>Гарантия</h2>
                                 <p>
                                     Описание того с каким удовольствием будет предоставлена гарантия!
                                 </p>
-                                <img src=".\images\slide-image-2.png" width="389" height="283">
                             </div>
-                            <div class="slide slide3 display-none">
+                            <div class="bottom-slide bottom-slide3">
                                 <h2>Кредит</h2>
                                 <p>
                                     Описание самых выгодных условий предоставления кредита!
                                 </p>
-                                <img src=".\images\slide-image-3.png" width="465" height="285">
                             </div>
                         </div>
                     </div>
+
+
+
+
+
+
+
                 </div>
             </div>
             <div class="bottom-info">
