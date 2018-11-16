@@ -1239,11 +1239,11 @@ input[type=search] {
     width: 100%;
 }
 
-.sort-panel {
+.up-panel {
     width: 100%;
 }
 
-.sort-panel ul{
+.up-panel ul{
     width: 100%;
     display: flex;
     padding: 15px;
@@ -1252,11 +1252,11 @@ input[type=search] {
     justify-content: flex-end;
 }
 
-.sort-panel h3 {
+.up-panel h3 {
     margin-right: 70px;
 }
 
-.sort-panel li {
+.up-panel li {
     margin-left: 40px;
 }
 
@@ -1274,7 +1274,7 @@ input[type=search] {
 
 .catalog-list li {
     width: 220px;
-    height: 333px;
+    height: 318px;
     float: left;
     position: relative;
     list-style: none;
