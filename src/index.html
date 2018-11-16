@@ -10,7 +10,7 @@
         <header class="main-header">
             <div class="upper-panel">
                 <div class="container">
-                    <div class="up-footer-inner">
+                    <div class="up-header-inner">
                         <div class="main-header-logo">
                             <a>Техномарт</a>
                             <div class="search">
@@ -20,17 +20,11 @@
                             </div>
                         </div>
                         <div class="upper-panel-items">
-                            <div>
-                                <a class="upper-panel-bookmark" href="#">
-                                    <img src=".\images\icon-bookmark@1X.png" width="14" height="16"> Закладки: 0</a>
-                            </div>
-                            <div>
-                                <a class="upper-panel-basket" href="#">
+                            <a class="upper-panel-bookmark" href="#">
+                                <img src=".\images\icon-bookmark@1X.png" width="14" height="16"> Закладки: 0</a>
+                            <a class="upper-panel-basket" href="#">
                                 <img src=".\images\cart-icon@1X.png" width="15" height="15"> Корзина: 0</a>
-                            </div>
-                            <div class="upper-panel-order">
-                                <a href="#">Оформить заказ</a>
-                            </div>
+                            <a class="upper-panel-order" href="#">Оформить заказ</a>
                         </div>
                     </div>
                 </div>
@@ -73,74 +67,63 @@
         <main>
             <div class="cards">
                 <div class="container">
-                    <div class="cards-inner">
-                        <div class="column-cards-left">
-                            <ul class="cards-left">
-                                <li class="card-item-1 new-card-item">
-                                    <h3>Материалы</h2>
-                                    <a class="category-btn" href="#">На любой вкус</a>
-                                    <div class="cards-img">
-                                        <img src=".\images\icon-1@1X.png" width="44" height="65">
-                                    </div>
-                                </li>
-                                <li class="card-item-2">
-                                    <h3>Инструмент</h2>
-                                    <a class="category-btn" href="#">На все случаи</a>
-                                    <div class="cards-img">
-                                        <img src=".\images\icon-2@1X.png" width="75" height="61">
-                                    </div>
-                                </li>
-                                <li class="card-item-3">
-                                    <h3>Техника</h2>
-                                    <a class="category-btn" href="#">Для стройки</a>
-                                    <div class="cards-img">
-                                        <img src=".\images\icon-3@1X.png" width="78" height="62">
-                                    </div>
-                                </li>
-
-
-
-                                <li class="slider">
-                                    <input type="radio" name=“slider” id=“slider1” checked=“checked”>
-                                    <input type="radio" name=“slider” id=“slider2”>
-                                    <div class="slides">
-                                        <div class="slide slide1">
-                                            <h2>Дрели</h2>
-                                            <p>Соседям на радость!</p>
-                                            <a class="button" href="#">Открыть каталог</a>
-                                        </div>
-                                        <div class="slide slide2">
-                                            <h2>Перфораторы</h2>
-                                            <p>Настоящие мужские игрушки</p>
-                                            <a class="button" href="#">Открыть каталог</a>
-                                        </div>
-                                    </div>
-                                    <div class=“slider-controls”>
-                                        <label class=“slider-control” for=“slider1”>Point 1</label>
-                                        <label class=“slider-control” for=“slider2”>Point-2</label>
-                                    </div>
-                                </li>
-
-
-
-
-                                <li class="card-item-5">
-                                    <h3>Скидки 50%</h2>
-                                    <a class="category-btn" href="#">На 350 товаров</a>
-                                    <div class="cards-img">
-                                        <img src=".\images\icon-4@1X.png" width="59" height="72">
-                                    </div>
-                                </li>
-                                <li class="card-item-6">
-                                    <h3>Доставка</h2>
-                                    <a class="category-btn" href="#">Бесплатно</a>
-                                    <div class="cards-img">
-                                        <img src=".\images\icon-5@1X.png" width="76" height="63">
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <ul class="cards-inner">
+                        <li class="card-item-1 new-card-item">
+                            <h3>Материалы</h2>
+                            <a class="category-btn" href="#">На любой вкус</a>
+                            <div class="cards-img">
+                                <img src=".\images\icon-1@1X.png" width="44" height="65">
+                            </div>
+                        </li>
+                        <li class="card-item-2">
+                            <h3>Инструмент</h2>
+                            <a class="category-btn" href="#">На все случаи</a>
+                            <div class="cards-img">
+                                <img src=".\images\icon-2@1X.png" width="75" height="61">
+                            </div>
+                        </li>
+                        <li class="card-item-3">
+                            <h3>Техника</h2>
+                            <a class="category-btn" href="#">Для стройки</a>
+                            <div class="cards-img">
+                                <img src=".\images\icon-3@1X.png" width="78" height="62">
+                            </div>
+                        </li>
+                        <li class="slider">
+                            <input type="radio" name=“slider” id=“slider1” checked=“checked”>
+                            <input type="radio" name=“slider” id=“slider2”>
+                            <div class="slides">
+                                <div class="slide slide1">
+                                    <h2>Дрели</h2>
+                                    <p>Соседям на радость!</p>
+                                    <a class="button" href="#">Открыть каталог</a>
+                                </div>
+                                <div class="slide slide2">
+                                    <h2>Перфораторы</h2>
+                                    <p>Настоящие мужские игрушки</p>
+                                    <a class="button" href="#">Открыть каталог</a>
+                                </div>
+                            </div>
+                            <div class="slider-controls">
+                                <label class="slider-control" for=“slider1”></label>
+                                <label class="slider-control" for=“slider2”></label>
+                            </div>
+                        </li>
+                        <li class="card-item-5">
+                            <h3>Скидки 50%</h2>
+                            <a class="category-btn" href="#">На 350 товаров</a>
+                            <div class="cards-img">
+                                <img src=".\images\icon-4@1X.png" width="59" height="72">
+                            </div>
+                        </li>
+                        <li class="card-item-6">
+                            <h3>Доставка</h2>
+                            <a class="category-btn" href="#">Бесплатно</a>
+                            <div class="cards-img">
+                                <img src=".\images\icon-5@1X.png" width="76" height="63">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <section class="popular-goods-annotation">
@@ -154,7 +137,7 @@
             <div class="popular-goods">
                 <div class="container">
                     <ul class="popular-goods-list">
-                        <li class="catalog-item-new">
+                        <li class="catalog-item new">
                             <figure class="catalog-item-image">
                                 <img src=".\images\perf-1.png", width="220", height="147", alt="Перфоратор BOSH BFG 9000"></a>
                             </figure>
@@ -285,18 +268,16 @@
 
 
 
-                    <div class="bottom-sliders">
-                        <div class="column-sliders">
-                            <input type="radio" name=“slider” id=“slider1-1” checked=“checked”>
-                            <input type="radio" name=“slider” id=“slider1-2”>
-                            <input type="radio" name=“slider” id=“slider1-3”>
-                            <div class="slider-controls">
-                                <label class="slider-control" for=“slider1-1”>Доставка</label>
-                                <label class="slider-control" for=“slider1-2”>Гарантия</label>
-                                <label class="slider-control" for=“slider1-3”>Гарантия</label>
-                            </div>
-                        </div>
-                        <div class="column-descr">
+                    <div class="bottom-slider">
+						<input type="radio" name="bottom-slider" id="bottom-slider1" checked="checked">
+						<input type="radio" name="bottom-slider" id="bottom-slider2">
+						<input type="radio" name="bottom-slider" id="bottom-slider3">
+						<div class="bottom-slider-controls">
+							<label class="bottom-slider-control" for="bottom-slider1">Доставка</label>
+							<label class="bottom-slider-control" for="bottom-slider2">Гарантия</label>
+							<label class="bottom-slider-control" for="bottom-slider3">Гарантия</label>
+						</div>
+                        <div class="bottom-slides">
                             <div class="bottom-slide bottom-slide1">
                                 <h2>Доставка</h2>
                                 <p>
@@ -318,7 +299,7 @@
                                     Описание самых выгодных условий предоставления кредита!
                                 </p>
                             </div>
-                        </div>
+						</div>
                     </div>
 
 
@@ -378,7 +359,7 @@
                             </div>
                         </div>
                         <div class="upper-footer-column2">
-                            <ul class="upper-footer-navigation">
+                            <ul>
                                 <li><a href="company.html">Компания</a></li>
                                 <li><a href="news.html">Новости</a></li>
                                 <li><a href="catalog.html">Каталог</a></li>
@@ -393,15 +374,13 @@
                 <div class="container">
                     <div class="fut">
                         <div class="middle-footer-column1">
-                            <div class="footer-contacts">
-                                <p>
-                                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                                    <a href="tel:+78125550555"> +7 (812) 555-05-55 </a>
-                                </p>
-                            </div>
+                            <p>
+                                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                                <a href="tel:+78125550555"> +7 (812) 555-05-55 </a>
+                            </p>
                         </div>
                         <div class="middle-footer-column2">
-                            <ul class="middle-footer-categories">
+                            <ul>
                                 <li><a href="#">Материалы</a></li>
                                 <li><a href="#">Техника</a></li>
                                 <li><a href="#">Инструмент</a></li>
@@ -428,14 +407,14 @@
                             </ul>
                         </div>
                         <div class="bottom-footer-column3">
-                            <p class="footer-feedback">
-                                <b>Обратная связь<br></b>
+                            <div class="footer-feedback">
+                                <p>Обратная связь<br></p>
                                 <a href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                            </p>
-                            <p class="footer-developers">
-                                <b>Разработано<br></b>
-                                <a href="https://google.com">babroPavel@google.com</a>
-                            </p>
+                            </div>
+                            <div class="footer-developers">
+                                <p>Разработано — <br></p>
+                                <a href="https://google.com">google.com</a>
+                            </div>
                         </div>
                     </div>
                 </div>
