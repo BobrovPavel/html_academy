@@ -1243,15 +1243,6 @@ input[type=search] {
     width: 100%;
 }
 
-.up-panel ul{
-    width: 100%;
-    display: flex;
-    padding: 15px;
-    margin: 20px 0;
-    background: #f7f3ec;
-    justify-content: flex-end;
-}
-
 .up-panel h3 {
     margin-right: 70px;
 }
@@ -1287,3 +1278,14 @@ input[type=search] {
     justify-content: space-between;
 }
 
+.up-panel {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background: wheat;
+    justify-content: space-between;
+}
+
+.up-panel ul {
+    display: flex;
+}
