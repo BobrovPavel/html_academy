@@ -67,7 +67,7 @@
             <div class="cards">
                 <div class="container">
                     <ul class="cards-inner">
-                        <li class="card-item new-card-item">
+                        <li class="card-item new">
                             <h3>Материалы</h2>
                             <a class="category-btn" href="#">На любой вкус</a>
                         </li>
@@ -327,6 +327,7 @@
                             <button type="button" class="open-map-button">
                                 <img src=".\images\map.png" width="300" height="158" alt="Map""> 
                             </button>
+                            
                             <div>
                                 <a class="button full-width-button", href="#">Заблудились? Напишите нам!</a>
                             </div>
@@ -396,7 +397,7 @@
                         </div>
                         <div class="bottom-footer-column3">
                             <div class="footer-feedback">
-                                <p>Обратная связь<br></p>
+                                <p>Обратная связь:<br></p>
                                 <a href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                             </div>
                             <div class="footer-developers">
@@ -408,10 +409,27 @@
                 </div>
             </section>
             <section class="modal modal-feedback">
-                <h2>Что-то пошло не так?</h2>
-                <p>Укажите свою контактную информацию</p>
-                <!--Здесь будет форма-->
-                <span class="modal-close">X</span>
+                <div class="modal-top">
+                    <div class="personal-info">
+                        <div class="col1">
+                            <p>Ваше имя:</p>
+                            <input type="text" id="input-name" placeholder="Представьтесь, пожалуйста">
+                            <label class="name-label" for="input-name"></label>
+                        </div>
+                        <div class="col2">
+                            <p>Ваш e-mail:</p>
+                            <input type="text" id="input-email" placeholder="Для отправки ответа">
+                            <label class="email-label" for="input-email"></label>
+                        </div>                    
+                    </div>
+                    <div class="question">
+                        <p>Текст письма:</p>
+                        <textarea name="question-area" rows="6" placeholder="В сободной форме"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="button" type="submit">Отправить</button>
+                </div>
             </section>
             <section class="modal modal-login">
                 <h2>Личный кабинет</h2>

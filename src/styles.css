@@ -57,6 +57,7 @@ figure {
     text-align: center;
     font-family: "Cuprum","Arial",sans-serif;
     display: inline-block;
+    border-radius: 3px;
 }
 
 .button:hover {
@@ -168,16 +169,6 @@ figure {
     border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
 .main-header-column1 a:hover {
     background: #ca2c37;
 }
@@ -185,7 +176,6 @@ figure {
 .main-header-column1 a:active {
     background: #ba2732;
 }
-
 
 .nain-header-column2 {
     width: 100%;
@@ -209,12 +199,17 @@ figure {
 .nain-header-column2 .upper-panel-bookmark,
 .nain-header-column2 .upper-panel-basket {
     position: relative;
-    padding-left: 50px;
+    padding-left: 47px;
+    padding-right: 30px;
+}
+
+.upper-panel-bookmark.catalog-bookmark {
     padding-right: 30px;
 }
 
 .upper-panel-basket.full {
     background: #ee3643;
+    padding-right: 25px;
 }
 
 .upper-panel-bookmark::before {
@@ -302,6 +297,13 @@ figure {
     padding-bottom: 40px;
     padding-top: 50px;
     justify-content: space-between;
+}
+
+.upper-info.catalog-upper-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    padding-top: 48px;
 }
 
 .column-description {
@@ -421,7 +423,7 @@ figure {
     list-style: none;
     color: white;
     font-size: 17px;
-    font-family: Scala, Cuprum-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-family: "Scala", "Cuprum-Regular";
     display: flex;
     padding: 0 21px;
     justify-content: space-between;
@@ -693,12 +695,6 @@ figure {
     background-position: 100% 122%;
 }
 
-
-
-
-
-
-
 .slider-controls {
     position: absolute;
     top: 120px;
@@ -793,7 +789,7 @@ figure {
 
 .popular-goods-list {
     display: flex;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     justify-content: space-between;
 }
 
@@ -834,11 +830,10 @@ figure {
     display: flex;
     flex-direction: column;
     height: 100%;
-    align-items: center;
     justify-content: space-between;
 }
 
-.catalog-item.new::before {
+.new::after {
     position: absolute;
     content: "";
     background-image: url("images/new flag@1X.png");
@@ -846,6 +841,7 @@ figure {
     height: 59px;
     background-repeat: no-repeat;
     right: 0;
+    top: 0;
     z-index: 1;
 }
 
@@ -859,15 +855,15 @@ figure {
     font-size: 17px;
     line-height: 18px;
     text-transform: uppercase;
-    padding: 10px 30px 13px;
+    padding: 10px 23px 9px 34px;
+    margin: 0 52px 20px 44px;    
 }
-
 
 .catalog-button::before {
     content: '';
     position: absolute;
     top: 0;
-    right: -36px;
+    right: -35px;
     border: 18px solid #fff;
     border-left-color: #f7374a;
 }
@@ -888,7 +884,7 @@ figure {
     background-color: #f7f3ec;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 24px 25px 28px;
+    padding: 25px 24px 25px 27px;
 }
 
 .popular-goods-inner h2,
@@ -930,7 +926,7 @@ figure {
 
 .popular-brand-list li:active {
     box-shadow: 0 4px 10px rgba(41,52,73,.5);
-    opacity: .3;
+    opacity: 0.3;
 }
 
 .services {
@@ -971,37 +967,7 @@ figure {
     width: 100%;
 }
 
-.slide1 h2 {
-    padding-bottom: 4px;
-    padding-left: 24px;
-    padding-top: 26px;
-    background: 0 0;
-    font-size: 36px;
-    line-height: 30px;
-    font-weight: 700;
-    font-style: normal;
-    font-family: "Cuprum","Arial",sans-serif;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.slide1 p {
-    padding-bottom: 4px;
-    padding-left: 24px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    font-style: normal;
-    font-family: "PT Sans","Arial",sans-serif;
-    color: #fff;
-}
-
-.slide1 a {
-    margin-left: 24px;
-    margin-top: 20px;
-}
-
-
+.slide1 h2,
 .slide2 h2 {
     padding-bottom: 4px;
     padding-left: 24px;
@@ -1016,6 +982,7 @@ figure {
     color: #fff;
 }
 
+.slide1 p,
 .slide2 p {
     padding-bottom: 4px;
     padding-left: 24px;
@@ -1027,17 +994,17 @@ figure {
     color: #fff;
 }
 
+.slide1 a,
 .slide2 a {
     margin-left: 24px;
     margin-top: 20px;
 }
 
-
 .slide h2 {
     font-size: 36px;
     font-family: "Cuprum","Arial",sans-serif;
     text-transform: uppercase;
-    color: white;
+    color: #fff;
     font-weight: 400;
     padding-bottom: 4px;
     font-size: 36px;
@@ -1082,7 +1049,7 @@ figure {
 }
 
 .bottom-info {
-    padding-bottom: 93px;
+    padding-bottom: 85px;
 }
 
 .about-us {
@@ -1098,11 +1065,11 @@ figure {
 }
 
 .about-us p:nth-child(2) {
-    padding-bottom: 30px;
+    padding-bottom: 26px;
 }
 
 .about-us h2 {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
     text-transform: uppercase;
     font-size: 30px;
     font-family: "Cuprum","Arial",sans-serif;
@@ -1113,16 +1080,20 @@ figure {
     width: 528px;
 }
 
+.column-contants {
+    margin-left: 120px;
+}
+
 .column-about .button {
     padding: 11px 42px 9px;
 }
 
 .open-map-button{
-    margin-bottom: 37px;
+    margin-bottom: 40px;
 }
 
 .cooperate {
-    margin: 14px 0 25px 37px;
+    margin: 12px 0 25px 37px;
     font-family: "Cuprum","Arial",sans-serif;
     font-size: 18px;
     line-height: 40px;
@@ -1139,7 +1110,7 @@ figure {
 }
 
 .upper-footer .fut {
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     display: flex;
 }
 
@@ -1156,7 +1127,8 @@ figure {
     width: 100%;
 }
 
-.upper-footer-column2 ul {
+.upper-footer-column2 ul,
+.middle-footer-column2 ul {
     background: #32425c;
     color: white;
     font-size: 18px;
@@ -1172,15 +1144,9 @@ figure {
     margin-left: 59px;
 }
 
-.upper-footer-column1 a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-
-.footer-logo a{
+.footer-logo a {
     display: inline-block;
-    padding: 19px 41px 9px;
+    padding: 18px 41px 15px;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -1217,10 +1183,21 @@ figure {
     margin-bottom: 35px;
     display: flex;
 }
-
+.bottom-footer-column1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+}
 .middle-footer-column1 {
     display: flex;
     align-items: center;
+    padding-top: 0px;
+    padding-left: 4px;
 }
 
 .middle-footer-column1 p {
@@ -1241,15 +1218,6 @@ figure {
 
 .middle-footer-column2 {
     margin-left: auto;
-}
-
-.middle-footer-column2 ul {
-    background: #32425c;
-    color: white;
-    font-size: 18px;
-    font-family: Scala, Cuprum-Regular, AdobeInvisFont, MyriadPro-Regular;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .middle-footer-column2 li {
@@ -1279,7 +1247,7 @@ figure {
 .bottom-footer .fut {
     display: flex;
     justify-content: space-between;
-    padding: 35px 0;
+    padding: 37px 0;
 }
 
 .bottom-footer-column1 {
@@ -1297,7 +1265,11 @@ figure {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 0 auto 0 150px;
+    margin: 0 auto 0 162px;
+}
+
+.socail-button {
+    padding: 20px;
 }
 
 .bottom-footer-column2 li:nth-child(1) a::before {
@@ -1343,7 +1315,7 @@ figure {
 
 .bottom-footer-column2 li {
     position: relative;
-    margin:0 3px;
+    margin:0 2px;
     background: #212a3a;
     border-radius: 50px;
     width: 42px;
@@ -1400,7 +1372,7 @@ figure {
 
 
 .some-words {
-    padding: 70px 0;
+    padding: 69px 0;
 }
 
 .product-categories-descroption {
@@ -1419,11 +1391,17 @@ figure {
     font-family: "Cuprum","Arial",sans-serif;
 }
 
+.some-words p {
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    font-size: 13px;
+    font-family: "PT Sans","Arial",sans-serif;
+}
+
 .main-header-catalog {
     padding-bottom: 0;
 }
-
-
 
 .catalog-site-navigation {
     margin-bottom: 25px;
@@ -1456,6 +1434,7 @@ figure {
     text-transform: uppercase;
     color: #000;
 }
+
 .breadcrumbs li:nth-child(1) a::before {
     content: "";
     position: absolute;
@@ -1484,7 +1463,6 @@ figure {
 
 }
 
-
 .catalog-categories-title {
     background: #f2f6f8;
     margin-bottom: 20px;
@@ -1499,7 +1477,7 @@ figure {
 }
 
 .right-panel .catalog {
-    padding-bottom: 28px;
+    padding-bottom: 32px;
 }
 
 .catalog-categories-title h1{
@@ -1568,6 +1546,7 @@ figure {
     background: #f7f3ec;
     border: none;
 }
+
 .filter {
     text-transform: uppercase;
 }
@@ -1576,7 +1555,8 @@ figure {
     margin-bottom: 31px;
 }
 
-.checkboxes input[type=checkbox]{
+.checkboxes input[type=checkbox],
+.radioboxes input[type=radio] {
     display: none;
 }
 
@@ -1590,24 +1570,45 @@ figure {
 .checkboxes input[type=checkbox]+label::before {
     position: absolute;
     content: "";
-    background-image: url("images/checkbox-off@1X.png");
+    background-image: url("images/checkbox-off-hover.png");
     background-repeat: no-repeat;
     width: 27px;
     height: 23px;
     left: 0;
+    top: -2px;
+    opacity: 0.5;
 }
 
 .checkboxes input[type=checkbox]:checked+label::before {
     position: absolute;
     content: "";
-    background-image: url("images/checkbox-on@1X.png");
+    background-image: url("images/checkbox-on-hover.png");
     background-repeat: no-repeat;
     width: 27px;
     height: 23px;
     left: 0;
+    top: -2px;
+    opacity: 0.5;
 }
 
-.checkboxes li {
+.checkboxes input[type=checkbox]:hover+label::before {
+    opacity: 1;
+}
+
+.checkboxes input[type=checkbox]:checked:hover+label::before {
+    opacity: 1;
+}
+
+.checkboxes input[type=checkbox]:disabled+label::before {
+    opacity: 0.3;
+}
+
+.checkboxes input[type=checkbox]:checked:disabled+label::before {
+    opacity: 0.3;
+}
+
+.checkboxes li,
+.radioboxes li {
     position: relative;
     font-weight: 400;
     font-size: 15px;
@@ -1625,19 +1626,6 @@ figure {
     margin-bottom: 80px;
 }
 
-.radioboxes li {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    font-family: "PT Sans","Arial",sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.radioboxes input[type=radio] {
-    display: none;
-}
-
 .radioboxes input[type=radio]+label {
     cursor: pointer;
     position: relative;
@@ -1648,24 +1636,41 @@ figure {
 .radioboxes input[type=radio]+label::before {
     position: absolute;
     content: "";
-    background-image: url("images/radio-off@1X.png");
+    background-image: url("images/radio-off-hover.png");
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
     left: 0;
+    top: -2px;
+    opacity: 0.5;
 }
 
 .radioboxes input[type=radio]:checked+label::before {
     position: absolute;
     content: "";
-    background-image: url("images/radio-on@1X.png");
+    background-image: url("images/radio-on-hover.png");
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
     left: 0;
+    opacity: 0.5;
 }
 
+.radioboxes input[type=radio]:hover+label::before {
+    opacity: 1;
+}
 
+.radioboxes input[type=radio]:checked:hover+label::before{
+    opacity: 1;
+}
+
+.radioboxes input[type=radio]:disabled+label::before {
+    opacity: 0.3;
+}
+
+.radioboxes input[type=radio]:checked:disabled+label::before{
+    opacity: 0.3;
+}
 
 .show-result .button {
     background: #fff;
@@ -1678,10 +1683,6 @@ figure {
     border: 1px solid #e5e5e5;
     padding: 8px 39px;
 }
-
-
-
-
 
 .filters {
     background: #f7f3ec;
@@ -1718,14 +1719,19 @@ figure {
 }
 
 .sort-panel a {
-    color: black;
-    text-decoration: underline;
+    text-decoration: none;
+    color: #acaaa5;
+    border-bottom: 1px dashed #ee3643;
     font-weight: 400;
     font-style: normal;
     font-size: 13px;
     line-height: 18px;
     font-family: "PT Sans","Arial",sans-serif;
     text-transform: uppercase;
+}
+
+.sort-panel a:hover {
+    color: #000;
 }
 
 .sort {
@@ -1753,14 +1759,51 @@ figure {
     margin-left: 44px;
 }
 
+.sort-by.current-sort a {
+    border: none;
+    color: #ee3643;
+}
+
 .asc a {
-    background-image: url("images/icon-up-dir@1X.png");
+    border: none;
+    background-image: url("images/top-gray.png");
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 10px;   
+}
+
+.asc.current-sort a {
+    background-image: url("images/top-red.png");
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 10px;   
+}
+
+.asc a:hover {
+    background-image: url("images/top-black.png");
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 10px; 
+}
+
+.desc a {
+    border: none;
+    background-image: url("images/bottom-gray.png");
+    background-repeat: no-repeat;
     width: 11px;
     height: 10px;
 }
 
-.desc a {
-    background-image: url("images/icon-down-dir@1X.png");
+.desc a:hover {
+    background-image: url("images/bottom-black.png");
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 10px;
+}
+
+.desc.current-sort a {
+    background-image: url("images/bottom-red.png");
+    background-repeat: no-repeat;
     width: 11px;
     height: 10px;
 }
@@ -1780,7 +1823,7 @@ figure {
     float: right;
     position: relative;
     list-style: none;
-    margin: 0 10px 20px;
+    margin: 0 10px 22px;
 }
 
 .pagination ul {
@@ -1789,7 +1832,7 @@ figure {
 
 
 .pagination a {
-    padding: 8px 14px 10px 16px;
+    padding: 10px 15px 10px 15px;
     margin-right: 9px;
     font-style: normal;
     font-size: 13px;
@@ -1798,6 +1841,12 @@ figure {
     text-transform: uppercase;
     color: #000;
     border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+.pagination-item.next a{
+    padding-right: 30px;
+    padding-left: 32px;
 }
 
 .pagination .current a{
@@ -1816,15 +1865,6 @@ figure {
 .catalog-preview {
     margin-bottom: 59px;
 }
-
-
-
-
-
-
-
-
-
 
 .catalog-item:hover .catalog-item-buttons {
     display: flex;
@@ -1851,6 +1891,7 @@ figure {
     text-transform: uppercase;
     background: #fff;
     border: 3px solid #63a63e;
+    border-radius: 3px;
 }
 
 .catalog-button-bookmark:hover {
@@ -1876,6 +1917,7 @@ figure {
     background: #63a63e;
     color: white;
     box-shadow: inset 0 -3px 0 #367315;
+    border-radius: 3px;
 }
 
 .catalog-button-buy::before {
@@ -1908,12 +1950,167 @@ figure {
     background: white;
 }
 
-
 .bottom-slider-controls label:hover {
     background: #293449;
 }
 
+.modal-feedback {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 620px;
+    background: #fff;
+    box-shadow: 0 30px 50px rgba(0,0,0,.7);
+    border-top: 7px solid #ee3643;
+    
+}
+
+.modal-top {
+    padding: 50px 80px 0;
+}
+
+.modal-footer {
+    padding: 37px 80px;
+    background: #f1f1f1;
+}
+
+.modal-feedback p {
+    margin-bottom: 9px;
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-style: normal;
+}
+
+.modal-feedback input {
+    margin-bottom: 17px;
+    padding: 9px 14px;
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+
+.question textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    border: 2px solid #999;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.modal-feedback button {
+    width: 100%;
+    border: none;
+}
+
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+}
 
 .modal {
     display: none;
+}
+
+.in-account a {
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.in-account .user-name {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 18px;
+    font-family: "Cuprum","Arial",sans-serif;
+}
+
+.column-account .in-account {
+    display: flex;
+    padding: 12px 67px 14px 46px;
+    background: #fff;
+    position: relative;
+}
+
+.profile-icon::before {
+    position: absolute;
+    content: "";
+    background-image: url("images/icon-user.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    left: 12px;
+    opacity: 0.3;
+}
+
+.profile-icon:hover::before {
+    opacity: 1;
+}
+
+.profile-icon:active::before {
+    opacity: 0.1;
+}
+
+.logout::before {
+    position: absolute;
+    content: "";
+    background-image: url("images/icon-logout.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 17px;
+    right: 9px;
+    opacity: 0.3;
+}
+
+.logout:hover::before {
+    opacity: 1;
+}
+
+.logout:active::before {
+    opacity: 0.1;
+}
+
+.account-actions a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+    color: #32425c;
+    text-decoration: underline;
+    padding-right: 10px;
+}
+
+.account-actions .my-orders {
+    padding-right: 0px;
+    padding-left: 7px;
+    padding-top: 7px;
+}
+
+.account-actions .personal-area {
+    padding-left: 19px;
+    padding-top: 7px;
+}
+
+.catalog-upper-info .column-contacts a {
+    padding: 10px 55px 7px 71px;
+}
+
+.catalog-upper-info .column-contacts p {
+    padding-bottom: 8px;
+
+}
+
+.catalog-upper-info .column-description {
+    margin-right: 8px;
+}
+
+.catalog-upper-info .column-contacts a::before {
+    left: 13px;
+}
+
+.header-background.catalog-header-background {
+    margin-bottom: 22px;
 }
