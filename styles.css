@@ -732,7 +732,11 @@ figure {
     top: 100px;
 }
 /* ////////////////////////////////////////////////////////////////////////////////// */
-.slider input:checked:nth-child(1) ~ .slider-control-left::after {
+.slider input:checked:nth-child(1) ~ .slider-controls .slider-control-left::after {
+    background: red;
+}
+
+.slider input:checked:nth-child(2) ~ .slider-controls .slider-control-right::after {
     background: red;
 }
 /* ////////////////////////////////////////////////////////////////////////////////// */
@@ -849,6 +853,8 @@ figure {
 }
 
 .catalog-button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     position: relative;
     margin-bottom: 20px;
     font-weight: 700;
@@ -857,7 +863,7 @@ figure {
     font-size: 17px;
     line-height: 18px;
     text-transform: uppercase;
-    padding: 10px 23px 9px 34px;
+    padding: 10px 23px 8px 34px;
     margin: 0 52px 20px 44px;    
 }
 
@@ -865,7 +871,7 @@ figure {
     content: '';
     position: absolute;
     top: 0;
-    right: -35px;
+    right: -36px;
     border: 18px solid #fff;
     border-left-color: #f7374a;
 }
@@ -2044,6 +2050,10 @@ figure {
     background: #293449;
 }
 
+.modal {
+    z-index: 5;
+}
+
 .modal-feedback {
     position: fixed;
     top: 5%;
@@ -2097,10 +2107,6 @@ figure {
 .personal-info {
     display: flex;
     justify-content: space-between;
-}
-
-.modal {
-    display: none;
 }
 
 .in-account a {
