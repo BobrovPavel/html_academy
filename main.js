@@ -1,7 +1,6 @@
 var modal = document.querySelectorAll(".modal");
 var support = document.querySelector(".full-width-button");
 var buy = document.querySelectorAll(".catalog-button-buy");
-var bu = document.querySelector(".catalog-button-buy");
 var popup_feedback = document.querySelector(".modal-feedback");
 var popup_buy = document.querySelector(".modal-added");
 var overlay = document.querySelector(".modal-overlay");
@@ -14,7 +13,9 @@ var login_error = popup_feedback.querySelector(".col1 .error");
 var email_error = popup_feedback.querySelector(".col2 .error");
 var isStorageSupport = true;
 var login_storage = localStorage.getItem("login");
-var email_storage = localStorage.getItem("email");        
+var email_storage = localStorage.getItem("email");    
+
+var catalog_item = document.querySelector(".catalog-item");
 
 function closeModal(modal) {
     modal.classList.remove("show");
@@ -46,6 +47,7 @@ window.addEventListener("keydown", function(evt){
 
 form.addEventListener("submit", function(evt) {
     evt.preventDefault();
+    console.log("try to submit")
     if(!login.value) {
         login_error.classList.add("show-error");
         popup_feedback.classList.add("modal-error");
@@ -65,6 +67,7 @@ login.addEventListener("focus", function(evt) {
     evt.preventDefault();
     login_error.classList.remove("show-error");
 });
+
 email.addEventListener("focus", function(evt) {
     evt.preventDefault();
     email_error.classList.remove("show-error");
@@ -85,8 +88,8 @@ support.addEventListener("click", function(evt) {
 });
 
 document.addEventListener("click", function(evt) {
-    evt.preventDefault();
     if(evt.target.classList.contains("catalog-button-buy")) {
+        evt.preventDefault();
         showModal(popup_buy);
     }
 });
