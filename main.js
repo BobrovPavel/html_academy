@@ -1,68 +1,51 @@
 var modal = document.querySelectorAll(".modal");
 var support = document.querySelector(".full-width-button");
 var buy = document.querySelectorAll(".catalog-button-buy");
+var bu = document.querySelector(".catalog-button-buy");
 var popup_feedback = document.querySelector(".modal-feedback");
 var popup_buy = document.querySelector(".modal-added");
 var overlay = document.querySelector(".modal-overlay");
 var close_feedback = document.querySelector(".modal-feedback .modal-close");
 var close_buy = document.querySelector(".modal-added .modal-close");
-
 var login = popup_feedback.querySelector("#input-name");
 var email = popup_feedback.querySelector("#input-email");
 var form = popup_feedback.querySelector("form");
-
 var login_error = popup_feedback.querySelector(".col1 .error");
 var email_error = popup_feedback.querySelector(".col2 .error");
 var isStorageSupport = true;
-var login_storage = "";
-var email_storage = "";           
-try {
-    var login_storage = localStorage.getItem("login");
-} catch (err) {
-    isStorageSupport = false;
-}
-try {
-    var email_storage = localStorage.getItem("email");
-} catch (err) {
-    isStorageSupport = false;
+var login_storage = localStorage.getItem("login");
+var email_storage = localStorage.getItem("email");        
+
+function closeModal(modal) {
+    modal.classList.remove("show");
+    overlay.classList.remove("show-overlay");
 }
 
-
-//  =========QUESTION==================
-
-//  window.addEventListener("keydown", function(evt){
-//     if (evt.keyCode === 27) {
-//         evt.preventDefault();
-//         if (modal.classList.contains("show")) {
-//             modal.classList.remove("show");
-//         }
-//     }
-// });
-
-
+function showModal(modal) {
+    modal.classList.add("show");
+    overlay.classList.add("show-overlay");
+}
 
 window.addEventListener("keydown", function(evt){
     if (evt.keyCode === 27) {
         evt.preventDefault();
         if (popup_feedback.classList.contains("show")) {
-            popup_feedback.classList.remove("show");
-            overlay.classList.remove("show-overlay");
+            closeModal(popup_feedback);
         }
     }
 });
+
 window.addEventListener("keydown", function(evt){
     if (evt.keyCode === 27) {
         evt.preventDefault();
         if (popup_buy.classList.contains("show")) {
-            popup_buy.classList.remove("show");
-            overlay.classList.remove("show-overlay");
+            closeModal(popup_buy);
         }
     }
 });
 
 form.addEventListener("submit", function(evt) {
     evt.preventDefault();
-    console.log("try to submit")
     if(!login.value) {
         login_error.classList.add("show-error");
         popup_feedback.classList.add("modal-error");
@@ -89,8 +72,7 @@ email.addEventListener("focus", function(evt) {
 
 support.addEventListener("click", function(evt) {
     evt.preventDefault();
-    popup_feedback.classList.add("show");
-    overlay.classList.add("show-overlay")
+    showModal(popup_feedback);
     login.focus();
     if (login_storage) {
         login.value = login_storage;
@@ -102,30 +84,25 @@ support.addEventListener("click", function(evt) {
     }
 });
 
-overlay.addEventListener("click", function() {
-    popup_feedback.classList.remove("show");
-    overlay.classList.remove("show-overlay");
+document.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    if(evt.target.classList.contains("catalog-button-buy")) {
+        showModal(popup_buy);
+    }
 });
+    
+overlay.addEventListener("click", function() {
+    closeModal(popup_feedback);
+});
+
 close_feedback.addEventListener("click", function() {
-    popup_feedback.classList.remove("show");
-    overlay.classList.remove("show-overlay");
+    closeModal(popup_feedback);
 });
-
-
-
-for (var i = 0; i < buy.length; i++)
-    buy[i].addEventListener("click", function(evt) {
-        evt.preventDefault(),
-        popup_buy.classList.add("show");
-        overlay.classList.add("show-overlay");
-    });
-
 
 overlay.addEventListener("click", function() {
-    popup_buy.classList.remove("show");
-    overlay.classList.remove("show-overlay");
+    closeModal(popup_buy);
 });
+
 close_buy.addEventListener("click", function() {
-    popup_buy.classList.remove("show");
-    overlay.classList.remove("show-overlay");
+    closeModal(popup_buy);
 });
