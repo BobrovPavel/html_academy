@@ -15,7 +15,6 @@ var login_error = popup_feedback.querySelector(".col1 .error");
 var email_error = popup_feedback.querySelector(".col2 .error");
 var login_storage = localStorage.getItem("login");
 var email_storage = localStorage.getItem("email");
-
 var catalog_item = document.querySelector(".catalog-item");
 var map_button = document.querySelector(".open-map-button");
 
@@ -60,8 +59,6 @@ window.addEventListener("keydown", function(evt){
 
 form.addEventListener("submit", function(evt) {
     evt.preventDefault();
-    console.log("try to submit")
-
     if(!login.value) {
         login_error.classList.add("show-error");
         showErrorAnimation();
