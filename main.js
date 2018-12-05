@@ -3,28 +3,41 @@ var support = document.querySelector(".full-width-button");
 var buy = document.querySelectorAll(".catalog-button-buy");
 var popup_feedback = document.querySelector(".modal-feedback");
 var popup_buy = document.querySelector(".modal-added");
+var popup_map = document.querySelector(".modal-map");
 var overlay = document.querySelector(".modal-overlay");
 var close_feedback = document.querySelector(".modal-feedback .modal-close");
 var close_buy = document.querySelector(".modal-added .modal-close");
+var close_map = document.querySelector(".modal-map .modal-close");
 var login = popup_feedback.querySelector("#input-name");
 var email = popup_feedback.querySelector("#input-email");
 var form = popup_feedback.querySelector("form");
 var login_error = popup_feedback.querySelector(".col1 .error");
 var email_error = popup_feedback.querySelector(".col2 .error");
-var isStorageSupport = true;
 var login_storage = localStorage.getItem("login");
-var email_storage = localStorage.getItem("email");    
+var email_storage = localStorage.getItem("email");
 
 var catalog_item = document.querySelector(".catalog-item");
+var map_button = document.querySelector(".open-map-button");
 
 function closeModal(modal) {
     modal.classList.remove("show");
     overlay.classList.remove("show-overlay");
+    popup_feedback.classList.remove("modal-error");
 }
 
 function showModal(modal) {
     modal.classList.add("show");
     overlay.classList.add("show-overlay");
+}
+
+function removeError(element) {
+    element.classList.remove("show-error");
+}
+
+function showErrorAnimation () {
+    popup_feedback.classList.remove("modal-error");
+    void popup_feedback.offsetWidth;
+    popup_feedback.classList.add("modal-error");
 }
 
 window.addEventListener("keydown", function(evt){
@@ -48,35 +61,36 @@ window.addEventListener("keydown", function(evt){
 form.addEventListener("submit", function(evt) {
     evt.preventDefault();
     console.log("try to submit")
+
     if(!login.value) {
         login_error.classList.add("show-error");
-        popup_feedback.classList.add("modal-error");
+        showErrorAnimation();
     } 
     if(!email.value) {
         email_error.classList.add("show-error");
+        showErrorAnimation();
     }
-    if(isStorageSupport && login.value){
+    if(login.value){
         localStorage.setItem("login", login.value);
     }
-    if(isStorageSupport && email.value){
+    if(email.value) {
         localStorage.setItem("email", email.value);
     }
 });
 
 login.addEventListener("focus", function(evt) {
     evt.preventDefault();
-    login_error.classList.remove("show-error");
+    removeError(login_error);
 });
 
 email.addEventListener("focus", function(evt) {
     evt.preventDefault();
-    email_error.classList.remove("show-error");
+    removeError(email_error);
 });
 
 support.addEventListener("click", function(evt) {
     evt.preventDefault();
     showModal(popup_feedback);
-    login.focus();
     if (login_storage) {
         login.value = login_storage;
         email.focus();
@@ -85,6 +99,14 @@ support.addEventListener("click", function(evt) {
         email.value = email_storage;
         login.focus();
     }
+    else {
+        login.focus();
+    }
+});
+
+map_button.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    showModal(popup_map);
 });
 
 document.addEventListener("click", function(evt) {
@@ -108,4 +130,12 @@ overlay.addEventListener("click", function() {
 
 close_buy.addEventListener("click", function() {
     closeModal(popup_buy);
+});
+
+overlay.addEventListener("click", function() {
+    closeModal(popup_map);
+});
+
+close_map.addEventListener("click", function() {
+    closeModal(popup_map);
 });
