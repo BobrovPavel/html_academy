@@ -66,12 +66,13 @@ form.addEventListener("submit", function(evt) {
     if(!email.value) {
         email_error.classList.add("show-error");
         showErrorAnimation();
-    }
-    if(login.value){
-        localStorage.setItem("login", login.value);
-    }
-    if(email.value) {
-        localStorage.setItem("email", email.value);
+    }else {
+        if(login.value){
+            localStorage.setItem("login", login.value);
+        }
+        if(email.value) {
+            localStorage.setItem("email", email.value);
+        }
     }
 });
 
