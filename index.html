@@ -14,7 +14,7 @@
                         <div class="main-header-column1">
                             <a href="#">Техномарт</a>
                             <div class="search">
-                                <form action="#" method="get" enctype="multipart/form-data">
+                                <form action="#" method="get" action="https://echo.htmlacademy.ru">
                                     <input type="search" id="site-search" name="q" placeholder="Поиск:">
                                     <label class="search-label" for="site-search"></label>
                                 </form>
@@ -39,7 +39,7 @@
                             </p>
                         </div>
                         <div class="column-contacts">
-                            <a href="tel:+78125550555"> +7 (812) 555-05-55 </a>
+                            <a href="tel:+78125550555" aria-label="Номер телефона"> +7 (812) 555-05-55 </a>
                             <p class="address">
                                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                             </p>
@@ -49,7 +49,7 @@
                             <a class="log" href="#">Регистрация</a>
                         </div>
                     </div>
-                    <nav class="site-navigation">
+                    <nav aria-label="Навигация" class="site-navigation">
                         <ul>
                             <li><a href="index.html">Главная</a></li>
                             <li><a href="#">Компания</a></li>
@@ -126,13 +126,13 @@
                                 <img src=".\img\perf01.png" width="210" height="150" alt="Перфоратор BOSH BFG 9000"></a>
                             </figure>
                             <div class="catalog-item-buttons">
-                                <a class="catalog-button-buy" href="#">Купить</a>
-                                <a class="catalog-button-bookmark" href="#">В закладки</a>
+                                <button class="catalog-button-buy">Купить</button>
+                                <button class="catalog-button-bookmark">В закладки</button>
                             </div>
                             <div class="catalog-item-description">
                                 <h4 class="catalog-item-name">Перфоратор BOSCH BFG 9000</h4>
                                 <p class="catalog-item-price">32500 Р.</p>
-                                <a class="button catalog-button" href="#">25500 Р.</a>
+                                <button class="button catalog-button">25500 Р.</button>
                             </div>
                         </li>
                         <li class="catalog-item">
@@ -140,13 +140,13 @@
                                 <img src=".\img\perf02.png" width="210" height="150" alt="Перфоратор BOSCH BFG 3000"></a>
                             </figure>
                             <div class="catalog-item-buttons">
-                                <a class="catalog-button-buy" href="#">Купить</a>
-                                <a class="catalog-button-bookmark" href="#">В закладки</a>
+                                <button class="catalog-button-buy">Купить</button>
+                                <button class="catalog-button-bookmark">В закладки</button>
                             </div>
                             <div class="catalog-item-description">
                                 <h4 class="catalog-item-name">Перфоратор BOSCH BFG 3000</h4>
                                 <p class="catalog-item-price">22500 Р.</p>
-                                <a class="button catalog-button" href="#">15500 Р.</a>
+                                <button class="button catalog-button">15500 Р.</button>
                             </div>
                         </li>
                         <li class="catalog-item">
@@ -154,13 +154,13 @@
                                 <img src="img/crop@1X.png" width="210" height="150" alt="Перфоратор BOSCH BFG 6000"></a>
                             </figure>
                             <div class="catalog-item-buttons">
-                                <a class="catalog-button-buy" href="#">Купить</a>
-                                <a class="catalog-button-bookmark" href="#">В закладки</a>
+                                <button class="catalog-button-buy">Купить</button>
+                                <button class="catalog-button-bookmark">В закладки</button>
                             </div>
                             <div class="catalog-item-description">
                                 <h4 class="catalog-item-name">Перфоратор BOSCH BFG 6000</h4>
                                 <p class="catalog-item-price">30500 Р.</p>
-                                <a class="button catalog-button" href="#">25500 Р.</a>
+                                <button class="button catalog-button">25500 Р.</button>
                             </div>
                         </li>
                         <li class="catalog-item new-item">
@@ -168,12 +168,12 @@
                                 <img src=".\img\perf-4.png" width="210" height="150" alt="Перфоратор BOSCH BFG 2000"></a>
                             </figure>
                             <div class="catalog-item-buttons">
-                                <a class="catalog-button-buy" href="#">Купить</a>
-                                <a class="catalog-button-bookmark" href="#">В закладки</a>
+                                <button class="catalog-button-buy">Купить</a>
+                                <button class="catalog-button-bookmark">В закладки</a>
                             </div>
                             <div class="catalog-item-description">
                                 <h4 class="catalog-item-name">Перфоратор BOSCH BFG 2000</h4>
-                                <a class="button catalog-button" href="#">25500 Р.</a>
+                                <button class="button catalog-button">25500 Р.</button>
                             </div>
                         </li>
                     </ul>
@@ -278,6 +278,7 @@
                                     Залезть в долговую яму стало проще! 
                                     Кредитные консультанты придут вам на помощь.
                                 </p>
+                                <a class="button credit-button" href="#">Отправить заявку</a>
                             </div>
 						</div>
                     </div>
@@ -309,12 +310,11 @@
                                 Вы можете забрать товар сами, <br>
                                 заехав в наш офис:
                             </p>
-                            <a href="#" class="open-map-button">
-                                <img src=".\img\map.png" width="300" height="158" alt="Map""> 
-                            </a>
-                            
+                            <button class="open-map-button" aria-label="Открыть карту">
+                                <img src=".\img\map.png" width="300" height="158" alt="Карта""> 
+                            </button>
                             <div>
-                                <a class="button full-width-button" href="#">Заблудились? Напишите нам!</a>
+                                <button class="button full-width-button"  aria-label="Форма обратной связи">Заблудились? Напишите нам!</button>
                             </div>
                         </div>
                     </div>
@@ -375,9 +375,9 @@
                         </div>
                         <div class="bottom-footer-column2">
                             <ul>
-                                <li><a class="socail-button" href="#"> </a></li>
-                                <li><a class="socail-button" href="#"></a></li>
-                                <li><a class="socail-button" href="#"></a></li>
+                                <li><a class="socail-button" href="#" aria-label="Вконтакте"> </a></li>
+                                <li><a class="socail-button" href="#" aria-label="Фэйсбук"></a></li>
+                                <li><a class="socail-button" href="#" aria-label="Инстаграм"></a></li>
                             </ul>
                         </div>
                         <div class="bottom-footer-column3">
@@ -433,7 +433,7 @@
             </section>
             <section class="modal modal-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.736269362946!2d31.012713415888566!3d52.42957615067888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d4685445fc44d5%3A0x89b008862ddaf479!2z0YPQuy4g0JrRgNC10YHRgtGM0Y_QvdGB0LrQsNGPIDEsINCT0L7QvNC10LvRjA!5e0!3m2!1sru!2sby!4v1543935189149" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <span class="modal-close">X</span>
+                <span class="modal-close"></span>
             </section>
         </footer>
         <div class="modal modal-overlay"></div>
