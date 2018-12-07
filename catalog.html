@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Каталог товаров интернет магазина строительных материалов</title>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href='css/normalize.css' rel='stylesheet' type='text/css'>
-        <link href='css/styles.css' rel='stylesheet' type='text/css'>
+        <link href='css/styles.min.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header class="main-header">
@@ -46,9 +47,9 @@
                         </div>
                         <div class="column-account">
                             <div class="in-account">
-                                <a class="profile-icon" href="#"></a>
+                                <a class="profile-icon" href="#" aria-label="Личный кабинет"></a>
                                 <a class="user-name" href="#">Равшан Джамшутович</h3>
-                                <a class="logout" href="#"></a>        
+                                <a class="logout" href="#" aria-label="Выйти"></a>        
                             </div>
                             <div class="account-actions">
                                 <a class="my-orders" href="#">Мои заказы</a>
@@ -74,7 +75,7 @@
             <div class="catalog-preview">
                 <div class="container">
                     <ul class="breadcrumbs">
-                        <li><a href="index.html"></a></li>
+                        <li><a href="index.html" aria-label="На главную"></a></li>
                         <li><a href="catalog.html">Каталог</a></li>
                         <li><a href="tools.html">Инструмент</a></li>
                         <li class="breadcrumbs-current">Перфораторы</li>
@@ -155,8 +156,8 @@
                                     <li class="sort-by current-sort"><a href="sort-by-price.html">По цене</a></li>
                                     <li class="sort-by"><a href="sort-by-type.html">По типу</a></li>
                                     <li class="sort-by"><a href="sort-by-func.html">По функционалу</a></li>
-                                    <li class="asc current-sort"><a href="sort-asc.html"></a></li>
-                                    <li class="desc"><a href="sort-desc.html"></a></li>
+                                    <li class="asc current-sort"><a href="sort-asc.html" aria-label="Сортировать по возрастанию"></a></li>
+                                    <li class="desc"><a href="sort-desc.html" aria-label="Сортировать по убыванию"></a></li>
                                 </ul>
                             </section>
                             <section class="catalog">
@@ -397,6 +398,6 @@
             </section>
         </footer>
         <div class="modal modal-overlay"></div>
-        <script src="js/catalog.js"></script>
+        <script src="js/script.catalog.min.js"></script>
     </body>
 </html>

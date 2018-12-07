@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Магазин строительных инструментов</title>
+        <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href='css/normalize.css' rel='stylesheet' type='text/css'>
-        <link href='css/styles.css' rel='stylesheet' type='text/css'>
-        <meta charset="utf-8">
+        <link href='css/styles.min.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header class="main-header">
@@ -15,7 +16,7 @@
                             <a href="#">Техномарт</a>
                             <div class="search">
                                 <form action="#" method="get" action="https://echo.htmlacademy.ru">
-                                    <input type="search" id="site-search" name="q" placeholder="Поиск:">
+                                    <input type="search" id="site-search" name="q" placeholder="Поиск:" aria-label="Поиск по сайту">
                                     <label class="search-label" for="site-search"></label>
                                 </form>
                             </div>
@@ -80,8 +81,8 @@
                             <a class="category-btn" href="#">Для стройки</a>
                         </li>
                         <li class="slider">
-                            <input type="radio" name="slider" id="slider1" checked=“checked”>
-                            <input type="radio" name="slider" id="slider2">
+                            <input type="radio" name="slider" id="slider1" checked=“checked” aria-label="Дрели">
+                            <input type="radio" name="slider" id="slider2" aria-label="Перфораторы">
                             <div class="slides">
                                 <div class="slide slide1">
                                     <h2>Дрели</h2>
@@ -437,6 +438,6 @@
             </section>
         </footer>
         <div class="modal modal-overlay"></div>
-        <script src="js/main.js"></script>
+        <script src="js/script.index.min.js"></script>
     </body>
 </html>

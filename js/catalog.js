@@ -15,7 +15,7 @@ function showModal(modal) {
     overlay.classList.add("show-overlay");
 }
 
-window.addEventListener("keydown", function(evt){
+window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
         if (popup_buy.classList.contains("show")) {

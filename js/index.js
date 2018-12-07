@@ -39,7 +39,7 @@ function showErrorAnimation () {
     popup_feedback.classList.add("modal-error");
 }
 
-window.addEventListener("keydown", function(evt){
+window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
         if (popup_feedback.classList.contains("show")) {
@@ -48,7 +48,7 @@ window.addEventListener("keydown", function(evt){
     }
 });
 
-window.addEventListener("keydown", function(evt){
+window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
         if (popup_buy.classList.contains("show")) {
@@ -67,7 +67,7 @@ form.addEventListener("submit", function(evt) {
         email_error.classList.add("show-error");
         showErrorAnimation();
     }else {
-        if(login.value){
+        if(login.value) {
             localStorage.setItem("login", login.value);
         }
         if(email.value) {
