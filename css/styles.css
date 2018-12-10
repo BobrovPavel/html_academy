@@ -152,7 +152,7 @@ fieldset {
 	padding-right: 0px;
 	padding-bottom: 12px;
 	padding-left: 49px;
-	width: 270px;
+	width: 260px;
 	height: 100%;
 }
 
@@ -378,6 +378,7 @@ fieldset {
 }
 
 .column-description {
+	max-width: 320px;
     padding-left: 53px;
     padding-right: 16px;
     padding-top: 5px;
@@ -444,6 +445,7 @@ fieldset {
 }
 
 .column-contacts p {
+	max-width: 260px;
 	font-weight: 400;
 	font-style: normal;
 	font-family: "Cuprum", "Arial", sans-serif;
@@ -743,7 +745,7 @@ fieldset {
 }
 
 .bottom-slide p {
-    width: 380px;
+    max-width: 380px;
 	font-size: 13px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: 400;
@@ -1013,7 +1015,7 @@ fieldset {
 	font-size: 17px;
 	line-height: 18px;
 	text-transform: uppercase;
-	padding: 10px 23px 8px 34px;
+	padding: 10px 20px 8px 34px;
 	margin: 0 52px 20px 44px;
 }
 
@@ -1288,11 +1290,12 @@ fieldset {
 }
 
 .column-about {
-	width: 528px;
+	max-width: 528px;
 }
 
 .column-contants {
 	margin-left: 120px;
+	max-width: 300px;
 }
 
 .column-about .button {
