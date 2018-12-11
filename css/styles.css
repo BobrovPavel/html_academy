@@ -2206,8 +2206,8 @@ fieldset {
 	height: 10px;
 }
 
-.desc a:hover:not(.desc.current-sort),
-.desc a:focus:not(.desc.current-sort) {
+.desc a:hover:not(desccurrent-sort),
+.desc a:focus:not(desccurrent-sort) {
 	background-image: url("../img/bottom-black.png");
 	background-repeat: no-repeat;
 	width: 11px;
