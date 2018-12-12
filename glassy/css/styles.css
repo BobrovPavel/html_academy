@@ -14,20 +14,11 @@ html,
 body {
     font-family: "Roboto", "Arial", sans-serif;
     box-sizing: border-box;
+    position: relative;
     color: #fff;
     font-weight: 400;
     margin: 0;
     padding: 0;
-}
-
-.site-inner {
-    background-color:#849d8f;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,6 +31,15 @@ a {
     vertical-align: middle;
     text-decoration: none;
     color: #fff;
+}
+
+a:hover,
+a:focus {
+    color: #ffbc9e;
+}
+
+a:active {
+    color: #bdab96;
 }
 
 ul {
@@ -61,19 +61,36 @@ figure {
 }
 
 .button {
-    background: #f35444;
+    background: linear-gradient(#e74a35, #f26843);
     color: #fff;
     font-size: 32px;
+    font-weight: 700;
     line-height: 44px;
+    border: none;
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
     padding: 10px 20px;
     box-shadow: 0px 2px 2px 0px #4306005c;
+    text-shadow: 0px 2px 5px #a0200b;
+}
+
+.button:hover,
+.button:focus {
+    box-shadow: 0px 2px 2px 0px #ac1000;
+    background: linear-gradient(#f58669, #ec6f5e);
+    color: #fff;
+}
+
+.button:active {
+    box-shadow: inset 0px 2px 2px 0px #942718;
+    background: linear-gradient(#d74632, #e1613e);
+    color: #fff;
 }
 
 .logo {
     position: relative;
+    padding-left: 155px;
 }
 
 .logo::before {
@@ -83,6 +100,8 @@ figure {
     background-repeat: no-repeat;
     width: 154px;
     height: 64px;
+    left: 0;
+    top: 10px;
 }
 
 .main-header-inner {
@@ -105,11 +124,22 @@ figure {
 }
 
 .navigation-items li:nth-child(1) {
-    margin-left: 24px;
+    margin-left: 5px;
 }
 
 .navigation-items li {
-    margin: 0 14px 10px;
+    margin-top: 23px;
+}
+
+.navigation-items a {
+    border-radius: 16px;
+    padding: 8px 15px 8px 15px; 
+}
+
+.navigation-items a:hover,
+.navigation-items a:focus {
+    background: #fff;
+    color: black;
 }
 
 .control-column {
@@ -126,12 +156,13 @@ figure {
 
 .control-items a {
     position: relative;
-    margin: 0 0px 10px 14px;
     background: #9db1a5;
     border-radius: 16px;
     font-size: 14px;
     line-height: 16px;
     padding: 8px 35px 8px 45px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .basket-item a::before {
@@ -148,8 +179,7 @@ figure {
 }
 
 .login-item a {
-    padding: 8px 10px 8px 45px;
-    margin: 0 0px 10px 10px;
+    padding: 8px 14px 8px 45px;
 }
 
 .search-item a {
@@ -174,11 +204,39 @@ figure {
     position: absolute;
     background-image: url("../img/search.png");
     background-repeat: no-repeat;
-    width: 15px;
+    width: 17px;
     height: 17px;
     top: 0;
+    left: 0;
     bottom: 0;
-    margin: auto 0;
+    right: 0;
+    margin: auto;
+}
+
+.search-item a:hover {
+    background: #fff;
+}
+
+.search-item a:hover::before {
+    background-image: url("../img/search-hover.png");
+}
+
+.login-item a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.login-item a:hover::before {
+    background-image: url("../img/login-hover.png");
+}
+
+.basket-item a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.basket-item a:hover::before {
+    background-image: url("../img/basket-hover.png");
 }
 
 #site-search {
@@ -189,6 +247,7 @@ figure {
     padding-bottom: 18px;
     text-align: right;
     color: #fff;
+    margin-top: 15px;
 }
 
 .contacts-info a {
@@ -202,13 +261,14 @@ figure {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+    margin-bottom: 5px;
 }
 
 .main-slider {
     padding-bottom: 40px;
 }
 
-.main-slider input {
+#slider1, #slider2, #slider3 {
     display: none;
 }
 
@@ -222,40 +282,54 @@ figure {
     position: relative;
 }
 
-#slider1:checked ~ .slides .slide1 {
-    display: block;
+#slider1:checked ~ .background-inner {
+    background: #819c8e;
+    background-image: url("../img/ice-creams-1.png");
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
-#slider1:checked ~ .site-inner {
-    background: #849d8f;
-}   
-
-#slider1:checked ~ .slider-controls label:nth-child(1)::before {
-    background: #fff;
-}
-
-#slider2:checked ~ .slides .slide2 {
-    display: block;
-}
-
-#slider2:checked ~ .site-inner {
+#slider2:checked ~ .background-inner {
     background: #8996a6;
+    background-image: url("../img/ice-creams-2.png");
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
-#slider2:checked ~ .slider-controls label:nth-child(2)::before {
-    background: #fff;
+#slider3:checked ~ .background-inner {
+    background: #9d8b84;
+    background-image: url("../img/ice-creams-3.png");
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
-#slider3:checked ~ .slides .slide3 {
+#slider1:checked ~ .background-inner .slides .slide1 {
+    display: block;
+} 
+
+#slider2:checked ~ .background-inner .slides .slide2 {
     display: block;
 }
 
-#slider3:checked ~ .site-inner {
-    background: #9d8b84;
+#slider3:checked ~ .background-inner  .slides .slide3 {
+    display: block;
 }
 
-#slider3:checked ~ .slider-controls label:nth-child(3)::before {
+#slider1:checked ~  .background-inner .slider-controls label:nth-child(1)::before {
     background: #fff;
+}
+
+#slider2:checked ~ .background-inner .slider-controls label:nth-child(2)::before {
+    background: #fff;
+}
+
+#slider3:checked ~ .background-inner .slider-controls label:nth-child(3)::before {
+    background: #fff;
+}
+
+.slider-controls label:hover::before {
+    background: #ffffff59;
+    cursor: pointer;
 }
 
 .slider-control::before {
@@ -266,7 +340,7 @@ figure {
     height: 21px;
     bottom: 23px;
     border-radius: 50%;
-    background-image: url("../img/empty-dot.png");
+    border: 2px solid #fff;
 }
 
 .slider-control-1::before {
@@ -310,29 +384,10 @@ figure {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
-    z-index: -1;
     top: 2px;   
     right: 0;
     left: 35px;
     margin: 0 auto;
-}
-
-.slide1::before {
-    background-image: url("../img/ice-creams-1.png");
-    width: 1079px;
-    height: 854px;
-}
-
-.slide2::before {
-    background-image: url("../img/ice-creams-2.png");
-    width: 1079px;
-    height: 854px;
-}
-
-.slide3::before {
-    background-image: url("../img/ice-creams-3.png");
-    width: 1079px;
-    height: 854px;
 }
 
 .stock-cards {
@@ -373,7 +428,6 @@ figure {
     border-radius: 11px;
     width: 563px;
 }
-
 
 .stock-card.card-1 {
     background-image: url("../img/card1.png");
@@ -580,7 +634,6 @@ figure {
 
 .subscribe-form input[type=email]+label {
     position: absolute;
-    width: 100%;
     padding: 11px 15px;
     font-size: 16px;
     line-height: 24px;
@@ -710,6 +763,7 @@ figure {
 
 .footer-navigation a {
     padding-bottom: 4px;
+    text-decoration: underline;
 }
 
 .copywrite {
