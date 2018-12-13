@@ -14,7 +14,6 @@ html,
 body {
     font-family: "Roboto", "Arial", sans-serif;
     box-sizing: border-box;
-    position: relative;
     color: #fff;
     font-weight: 400;
     margin: 0;
@@ -101,7 +100,7 @@ figure {
     width: 154px;
     height: 64px;
     left: 0;
-    top: 10px;
+    top: 11px;
 }
 
 .main-header-inner {
@@ -123,23 +122,105 @@ figure {
     align-items: center; 
 }
 
-.navigation-items li:nth-child(1) {
-    margin-left: 5px;
+.nav-item:nth-child(1) {
+    margin-left: 4px;
 }
 
-.navigation-items li {
-    margin-top: 23px;
+.nav-item {
+    margin-top: 21px;
 }
 
-.navigation-items a {
+.nav-item a {
+    margin: 8px 15px 8px 15px;
+    border-bottom: 1px solid #a9bbb1;
+}
+
+.nav-item a:hover,
+.nav-item a:focus  {
+    padding: 8px 15px 8px 15px;
+    margin: 0;
     border-radius: 16px;
-    padding: 8px 15px 8px 15px; 
-}
-
-.navigation-items a:hover,
-.navigation-items a:focus {
     background: #fff;
     color: black;
+}
+
+.nav-item a:active {
+    padding: 8px 15px 8px 15px;
+    margin: 0;
+    border-radius: 16px;
+    background: #ededed;
+    color: black;
+    box-shadow: inset 0px 2px 1px #696969;
+}
+
+.catalog-nav-item a {
+    position: relative;
+}
+
+.nav-item.catalog-nav-item:hover  .catalog-dropdown,
+.nav-item.catalog-nav-item:focus  .catalog-dropdown {
+    display: block;
+}
+
+.catalog-dropdown {
+    display: none;
+    position: absolute;
+    background: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px #00000099;
+    padding-bottom: 4px;
+}
+
+.catalog-dropdown li {
+    margin: 4px 0 4px;
+}
+
+.navigation-items .catalog-dropdown .dropdown-title {
+    border-bottom: 1px solid #d1d0ce;
+    padding-left: 10px;
+    padding: 6px 5px 12px 15px;
+    margin: 5px;
+}
+
+.dropdown-title h2 {
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.catalog-dropdown a {
+    color: #323232;
+    margin: 0;
+    width: 143px;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    border: none;
+}
+
+.catalog-dropdown a:hover,
+.catalog-dropdown a:focus {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    background: #fbded7;
+    border-radius: 0;
+}
+
+.catalog-dropdown a:active {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    background: #f6b5a5;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.current-dropdown-item {
+    background: #d07058;
 }
 
 .control-column {
@@ -161,7 +242,7 @@ figure {
     font-size: 14px;
     line-height: 16px;
     padding: 8px 35px 8px 45px;
-    margin-top: 20px;
+    margin-top: 23px;
     margin-left: 10px;
 }
 
@@ -178,15 +259,129 @@ figure {
     margin: auto 17px;
 }
 
-.login-item a {
+.login-item {
+    position: relative;
+}
+
+.login-item:hover .login-form,
+.login-item:focus .login-form {
+    display: block;
+}
+
+.login-form {
+    position: absolute;
+    display: none;
+    padding: 20px 18px;
+    background: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px #00000099
+    right: 0;
+    top: 60px;
+}
+
+.login-form a {
+    color: #000;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.login-form input {
+    width: 241px;
+    padding: 9px 10px;
+    border: 1px solid #4646467a;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #323232;
+    margin-bottom: 22px;
+}
+
+.login-form label {
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    cursor: text;
+}
+
+.login-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.login-control button {
+    font-size: 16px;
+    min-height: 44px;
+    line-height: 24px;
+    padding: 10px 26px;
+    width: 100px;
+    height: 44px;
+}
+
+.choice {
+    padding-left: 20px;
+}
+
+.choice a {
+    font-size: 13px;
+    line-height: 24px;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.restore-password {
+    margin-bottom: -5px;
+}
+
+.new-registration {
+    margin-top: -5px;
+}
+
+.login-link {
     padding: 8px 14px 8px 45px;
+}
+
+.search-item:hover .search-form {
+    display: block;
+}
+
+.search-form {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    padding: 21px 15px;
+    background: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px #00000099;
 }
 
 .search-item a {
     padding: 17px 24px 17px 11px;
 }
 
-.login-item a::before {
+.search-item {
+    position: relative;
+}
+
+.ctrl-item {
+    padding-bottom: 5px;
+}
+
+.search-form input {
+    width: 313px;
+    padding: 8px 10px;
+    border: 1px solid #4646467a;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #323232;
+}
+
+.login-link::before {
     content: "";
     position: absolute;
     background-image: url("../img/login.png");
@@ -221,12 +416,12 @@ figure {
     background-image: url("../img/search-hover.png");
 }
 
-.login-item a:hover {
+.login-link:hover {
     background: #fff;
     color: #000;
 }
 
-.login-item a:hover::before {
+.login-link:hover::before {
     background-image: url("../img/login-hover.png");
 }
 
@@ -239,15 +434,11 @@ figure {
     background-image: url("../img/basket-hover.png");
 }
 
-#site-search {
-    display: none;
-}
-
 .contacts-info {
     padding-bottom: 18px;
     text-align: right;
     color: #fff;
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
 .contacts-info a {
