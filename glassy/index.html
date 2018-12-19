@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
         <meta charset="utf-8" />
@@ -15,11 +15,13 @@
                 <div class="container">
                     <div class="main-header-inner">
                         <div class="navigation-column">
-                            <a class="logo" href="index.html"></a>
+                            <a class="logo" href="#">
+                                <img src="img/Logo@1X.png" width="154px" height="64px" alt="logo">
+                            </a>
                             <ul class="navigation-items">
                                 <li class="nav-item catalog-nav-item">
-                                    <a href="#">Каталог</a>
-                                    <ul class="catalog-dropdown">
+                                    <a href="catalog.html">Каталог</a>
+                                    <ul class="catalog-dropdown dropdown">
                                         <li class="dropdown-title"><h2>Новинки</h2></li>
                                         <li><a href="#">Сливочное</a></li>
                                         <li class="current-dropdown-item"><a href="#">Щербеты</a></li>
@@ -35,14 +37,14 @@
                             <ul class="control-items">
                                 <li class="ctrl-item search-item">
                                     <a href="#"></a>
-                                    <form class="search-form" action="#" method="GET">
+                                    <form class="search-form dropdown" action="#" method="GET">
                                         <input type="search" id="site-search" name="q" placeholder="Что ищем?" aria-label="Поиск по сайту">
                                         <label class="search-label" for="site-search"></label>
                                     </form>
                                 </li>
                                 <li class="ctrl-item login-item">
                                     <a href="#" class="login-link">Вход</a>
-                                    <form class="login-form" action="#" method="GET">
+                                    <form class="login-form dropdown" action="#" method="GET">
                                         <input type="email" id="email-field" name="em" placeholder="Электронная почта" aria-label="Электронная почта">
                                         <label class="search-label" for="email-field"></label>
                                         <input type="password" id="password-field" name="pas" placeholder="Пароль" aria-label="Пароль">
@@ -58,18 +60,17 @@
                                 </li>
                                 <li class="ctrl-item basket-item"><a href="#">Пусто</a></li>
                             </ul>
+                            <div class="contacts-info">
+                                <p>С 10 до 20, ежедневно</p>
+                                <a href="tel:=8 812 450-25-25">8 812 450-25-25</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </header>
             <main>
                 <div class="container">
-                    <div class="contacts-info">
-                        <p>С 10 до 20, ежедневно</p>
-                        <a href="tel:=8 812 450-25-25">8 812 450-25-25</a>
-                    </div>
                     <section class="main-slider">
-                        
                         <div class="slides">
                             <div class="slide slide1">
                                 <div class="slide-description">
@@ -114,48 +115,52 @@
                     </div>
                     <ul class="ice-cream-catalog">
                         <li class="catalog-item">
-                        <div class="catalog-item-inner">
-                            <a class="button catalog-item-button" href="#" >Быстрый просмотр</a>
-                        </div>
-                            <figure class="catalog-item-image">
-                                <img src="img/1@1X.png" width="267" height="267" alt="img">
-                            </figure>
-                            <p class="catalog-item-price">310Р/кг</p>
-                            <span>
+                            <div class="catalog-item-inner">
+                                <a class="button catalog-item-button" href="#" >Быстрый просмотр</a>
+                            </div>
+                            <div class="card-description">
+                                <figure class="catalog-item-image">
+                                    <img src="img/1@1X.png" width="267" height="267" alt="img">
+                                </figure>
+                                <p class="catalog-item-price">310Р/кг</p>
                                 <a class="catalog-item-description" href="#">Сливочное с апельсиновым джемом и цитросувой стружкой</a>
-                            </span>
-                            
-                            
+                            </div>
                         </li>
                         <li class="catalog-item">
-                        <div class="catalog-item-inner">
-                            <a class="button catalog-item-button" href="#" >Быстрый просмотр</a>
-                        </div>
-                            <figure class="catalog-item-image">
-                                <img src="img/2@1X.png" width="267" height="267" alt="img">
-                            </figure>
-                            <p class="catalog-item-price">380Р/кг</p>
-                            <a class="catalog-item-description" href="#">Сливочно-кофейное с кусочками шоколада</a>
+                            <div class="catalog-item-inner">
+                                <a class="button catalog-item-button" href="#" >Быстрый просмотр</a>
+                            </div>
+                            <div class="card-description">
+                                <figure class="catalog-item-image">
+                                    <img src="img/2@1X.png" width="267" height="267" alt="img">
+                                </figure>
+                                <p class="catalog-item-price">380Р/кг</p>
+                                <a class="catalog-item-description" href="#">Сливочно-кофейное с кусочками шоколада</a>
+                            </div>
                         </li>
                         <li class="catalog-item">
-                        <div class="catalog-item-inner">
-                            <a class="button catalog-item-button" href="#" >Быстрый просмотр</a>
-                        </div>
-                            <figure class="catalog-item-image">
-                                <img src="img/3@1X.png" width="267" height="267" alt="img">
-                            </figure>
-                            <p class="catalog-item-price">355Р/кг</p>
-                            <a class="catalog-item-description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                            <div class="catalog-item-inner">
+                                <a class="button catalog-item-button" href="#" >Быстрый просмотр</a>
+                            </div>
+                            <div class="card-description">
+                                <figure class="catalog-item-image">
+                                    <img src="img/3@1X.png" width="267" height="267" alt="img">
+                                </figure>
+                                <p class="catalog-item-price">355Р/кг</p>
+                                <a class="catalog-item-description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                            </div>
                         </li>
                         <li class="catalog-item">
-                        <div class="catalog-item-inner">
-                            <a class="button catalog-item-button" href="#" >Быстрый просмотр</a>
-                        </div>
-                            <figure class="catalog-item-image">
-                                <img src="img/4@1X.png" width="267" height="267" alt="img">
-                            </figure>
-                            <p class="catalog-item-price">415Р/кг</p>
-                            <a class="catalog-item-description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                            <div class="catalog-item-inner">
+                                <a class="button catalog-item-button" href="#" >Быстрый просмотр</a>
+                            </div>
+                            <div class="card-description">
+                                <figure class="catalog-item-image">
+                                    <img src="img/4@1X.png" width="267" height="267" alt="img">
+                                </figure>
+                                <p class="catalog-item-price">415Р/кг</p>
+                                    <a class="catalog-item-description" href="#">Сливочное крем-брюле с карамельной подливкой</a>                                
+                            </div>
                         </li>
                     </ul>
                     <div class="description">
@@ -193,7 +198,8 @@
                     </div>
                 </div>
                 <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.7362693629466!2d31.01271341588856!3d52.429576150678876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d4685445fc44d5%3A0x89b008862ddaf479!2z0YPQuy4g0JrRgNC10YHRgtGM0Y_QvdGB0LrQsNGPIDEsINCT0L7QvNC10LvRjA!5e0!3m2!1sru!2sby!4v1544452010730" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.7362693629466!2d31.01271341588856!3d52.429576150678876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d4685445fc44d5%3A0x89b008862ddaf479!2z0YPQuy4g0JrRgNC10YHRgtGM0Y_QvdGB0LrQsNGPIDEsINCT0L7QvNC10LvRjA!5e0!3m2!1sru!2sby!4v1544452010730" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <img class="map-img" src="img/Layer 3@1X.png" width="100%" height="100%">
                     <div class="address-window">
                         <div  class="modal-address">
                             <p>Адрес главного офиса <br>и офлайн магазина:</p>
@@ -212,10 +218,10 @@
                 <div class="container">
                     <div class="main-footer">
                         <ul class="social-buttons">
-                            <li><a class="social-button" href="#"></a></li>
-                            <li><a class="social-button" href="#"></a></li>
-                            <li><a class="social-button" href="#"></a></li>
-                            <li><a class="social-button" href="#"></a></li>
+                            <li><a class="social-button twit-btn" href="#"></a></li>
+                            <li><a class="social-button inst-btn" href="#"></a></li>
+                            <li><a class="social-button fb-btn" href="#"></a></li>
+                            <li><a class="social-button vk-btn" href="#"></a></li>
                         </ul>
                         <div class="footer-navigation">
                             <div class="footer-nav-column">
@@ -231,7 +237,7 @@
                             <a class="html-academy-logo" href="#">
                                 <img src="img/logo-htmlacademy-small@1X.png" width="108" height="39" alt="HTML Academy">
                             </a>
-                            <p>Сделано в <a href="#">HTML Academy</a> © 2018</p>
+                            <p>Сделано в <a class="academy-href" href="#">HTML Academy</a> © 2018</p>
                         </div>
                     </div>
                 </div>
