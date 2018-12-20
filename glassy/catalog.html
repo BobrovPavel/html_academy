@@ -15,7 +15,7 @@
                             <img src="img/Logo@1X.png" width="154px" height="64px" alt="logo">
                         </a>
                         <ul class="navigation-items">
-                            <li class="nav-item catalog-nav-item">
+                            <li class="nav-item catalog-nav-item current-item">
                                 <a href="catalog.html">Каталог</a>
                                 <ul class="catalog-dropdown dropdown">
                                     <li class="dropdown-title"><h2>Новинки</h2></li>
@@ -54,7 +54,7 @@
                                     </div>
                                 </form>
                             </li>
-                            <li class="ctrl-item basket-item"><a href="#">Пусто</a></li>
+                            <li class="ctrl-item basket-item full"><a href="#">2 товара</a></li>
                         </ul>
                         <div class="contacts-info">
                             <p>С 10 до 20, ежедневно</p>
@@ -71,7 +71,7 @@
                 <div class="breadcrumbs">
                     <a href="index.html">Главная</a><span class="raquo">»</span>
                     <a href="#">Каталог</a><span class="raquo">»</span>
-                    <a href="#">Сливочное</a>
+                    <a class="disabled" href="#">Сливочное</a>
                 </div>
                 <h2 class="category-title">Сливочное мороженое</h2>
                 <form class="filters">
@@ -87,27 +87,31 @@
                     <div class="filter price-filter">
                         <legend>Цена: 100 руб. - 500 руб.</legend>
                         <div class="slider">
-                            <div class="slider-line"></div>
-                            <div class="slider-min"></div>
-                            <div class="slider-max"></div>
+                            <div class="base-line">
+                                <div class="slider-line"></div>
+                                <div class="slider-min"></div>
+                                <div class="slider-max"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="filter fat-filter">
                         <legend>Жирность</legend>
-                        <ul class="radioboxes">
-                            <li>
-                                <input type="radio" id="rb1"><label for="rb1">0%</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="rb2"><label for="rb1">до 10%</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="rb3"><label for="rb1">до 30%</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="rb4"><label for="rb1">выше 30%</label>
-                            </li>
-                        </ul>
+                        <fieldset>
+                            <ul class="radioboxes">
+                                <li>
+                                    <input type="radio" name="rb" id="rb1"><label for="rb1">0%</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="rb" id="rb2"><label for="rb2">до 10%</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="rb" id="rb3"><label for="rb3">до 30%</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="rb" id="rb4"><label for="rb4">выше 30%</label>
+                                </li>
+                            </ul>
+                        </fieldset>
                     </div>
                     <div class="filter fill-filter">
                         <legend>Наполнители:</legend>
@@ -278,11 +282,13 @@
                     </li>
                 </ul>
                 <div class="pagination">
-                    <a href="#">1</a>
+                    <a href="#" class="prev"></a>
+                    <a href="#" class="current">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">4</a>
                     <a href="#">5</a>
+                    <a href="#" class="next"></a>
                 </div>
             </div>
         </main>
