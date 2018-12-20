@@ -39,6 +39,10 @@ a {
     color: #fff;
 }
 
+fieldset {
+    border: none;
+}
+
 a:hover,
 a:focus {
     color: #ffbc9e;
@@ -199,7 +203,6 @@ figure {
 .nav-item.catalog-nav-item:hover  .catalog-dropdown,
 .nav-item.catalog-nav-item:focus  .catalog-dropdown {
     display: block;
-    z-index: 1;
 }
 
 .dropdown {
@@ -212,6 +215,7 @@ figure {
     right: 0;
     bottom: -5px;
     transform: translateY(100%);
+    z-index: 1;
 }
 
 .catalog-dropdown {
@@ -293,7 +297,7 @@ figure {
     align-items: center;   
 }
 
-.control-items a {
+.control-items a:not(.delete) {
     position: relative;
     background: #ffffff30;
     border-radius: 16px;
@@ -306,7 +310,11 @@ figure {
     padding: 8px 20px 8px 45px;
 }
 
-.basket-item a::before {
+.basket-item {
+    position: relative;
+}
+
+.basket-item a:not(.delete)::before {
     content: "";
     position: absolute;
     background-image: url("../img/basket.png");
@@ -421,7 +429,7 @@ figure {
     padding: 21px 15px;
 }
 
-.search-item a {
+.ctrl-item.search-item a {
     padding: 17px 24px 17px 11px;
 }
 
@@ -715,7 +723,7 @@ figure {
 .stock-card {
     padding: 15px 21px;
     position: relative;
-    border-radius: 11px;
+    border-radius: 17px;
     width: 563px;
 }
 
@@ -732,6 +740,7 @@ figure {
 .ice-cream-catalog {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4px;
 }
 
 .catalog-item {
@@ -740,6 +749,7 @@ figure {
     flex-direction: column;
     align-items: center;
     width: 267px;
+    height: 362px;
 }
 
 .catalog-item:hover {
@@ -780,14 +790,19 @@ figure {
     position: relative;
     bottom: 63px;
     left: 0;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 45px;
 }
 
+.catalog-item-price span {
+    font-size: 45px;
+    margin-right: 7px;
+}
+
 .catalog-item-description {
     position: relative;
-    bottom: 35px;
+    bottom: 41px;
     text-align: center;
     line-height: 22px;
     font-size: 16px;
@@ -806,7 +821,7 @@ figure {
 .description {
     background-image: url("../img/image (5).png");
     color: #323232;
-    padding: 25px 21px;
+    padding: 24px 21px;
     border-radius: 15px;
     margin-bottom: 40px;
 }
@@ -1159,7 +1174,7 @@ figure {
 }
 
 .filter {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 
 .filters legend {
@@ -1209,7 +1224,7 @@ figure {
 .slider {
     position: relative;
     width: 220px;
-    height: 35px;
+    height: 37px;
     padding: 16px 22px;
     background: #ffffff30;
     border-radius: 16px;
@@ -1380,7 +1395,7 @@ figure {
 }
 
 .filter-btn {
-    padding: 5px 26px 5px 28px;
+    padding: 5px 26px;
     font-weight: 500;
     background: #ffffff30;
     border: 2px solid #fff;
@@ -1390,6 +1405,21 @@ figure {
     line-height: 18px;
     border-radius: 18px;
     margin-top: 19px;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background: #fff;
+    color: #000;
+}
+
+.filter-btn:active {
+    box-shadow: inset 0 2px 1px #696969;
+    padding: 8px 28px;
+    background: #eaeaea;
+    border: 0;
+    color: #000;
 }
 
 .ice-cream-list {
@@ -1401,12 +1431,14 @@ figure {
 .pagination {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 30px;
 }
 
 .pagination a {
     color: #fff;
-    padding: 3px 9px;
+    padding: 3px 8px;
     border-radius: 50%;
+    margin-left: 3px;
 }
 
 .pagination .current {
@@ -1420,6 +1452,153 @@ figure {
     color: #fff;
 }
 
-.pagination .prev {
+.pagination .prev,
+.pagination .next {
+    position: relative;
+    padding: 3px 12px;
+}
 
+.pagination .next {
+    left: 8px;
+}
+
+.pagination .prev {
+    right: 8px;
+}
+
+.pagination .prev::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/_@1X.png");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    width: 8px;
+    height: 14px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;  
+}
+
+.pagination .next::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/_@1X.png");
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 14px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;  
+}
+
+.pagination a.inactive {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}
+
+.ice-cream-list.catalog-list {
+    margin-bottom: 48px;
+}
+
+.basket-product {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.basket-products {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #cacac7;
+}
+
+.basket-dropdown {
+    width: 540px;
+    padding: 28px 13px 22px 13px;
+}
+
+.basket-dropdown p {
+    color: #323232;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.basket-product-name {
+    max-width: 220px;
+}
+
+.basket-product-info span {
+    color: #999;
+}
+
+.basket-product-price {
+    margin-right: 20px;
+}
+
+.delete {
+    font-size: 0px;
+    position: relative;
+    width: 11px;
+    height: 11px;;
+}
+
+.delete::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/Х@1X.png");
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 11px;
+    top: 4px;
+    left: 10px;
+}
+
+.final-price {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #323232;
+    text-align: end;
+    margin-bottom: 13px;
+}
+
+.preview {
+    display: flex;
+}
+
+.preview img {
+    position: relative;
+    top: -7px;
+    left: -10px;
+    margin-right: 2px;
+}
+
+.order {
+    text-align: end;
+}
+
+.order-button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 11px;
+}
+
+.basket-dropdown::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.ctrl-item.basket-item:hover .basket-dropdown,
+.ctrl-item.basket-item:focus .basket-dropdown {
+    display: block;
 }
