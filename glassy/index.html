@@ -3,7 +3,7 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
         <meta charset="utf-8" />
-        <link href='normalize.css' rel='stylesheet' type='text/css'>
+        <link href='css/normalize.css' rel='stylesheet' type='text/css'>
         <link href='css/styles.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -60,10 +60,10 @@
                                 </li>
                                 <li class="ctrl-item basket-item"><a href="#">Пусто</a></li>
                             </ul>
-                            <div class="contacts-info">
+                            <section class="contacts-info">
                                 <p>С 10 до 20, ежедневно</p>
                                 <a href="tel:=8 812 450-25-25">8 812 450-25-25</a>
-                            </div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -241,7 +241,89 @@
                         </div>
                     </div>
                 </div>
+                <section class="modal feedback-modal">
+                    <div class="modal-close"></div>
+                    <h2 class="modal-header">Мы обязательно вам ответим!</h2>
+                    <form class="feedback-form">
+                        <div class="modal-input-name-wrapper">
+                            <input type="text" id="modal-input-name">
+                            <label for="modal-input-name">Как вас зовут?</label>
+                        </div>
+                        <div class="modal-input-email-wrapper">
+                            <input type="email" id="modal-input-email">
+                            <label for="modal-input-email">Ваша почта для ответа?</label>
+                        </div>
+                        <div class="modal-input-message-wrapper">
+                            <textarea id="modal-input-message"></textarea>
+                            <label for="modal-input-message">Напишите что-нибудь...</label>
+                        </div>
+                        <input class="button" type="submit" value="Отправить">
+                    </form>
+                </section>
             </footer>
+            <div class="modal modal-overlay"></div>
+            <script>
+                var modalClass = document.querySelectorAll(".modal");
+                var feedbackButton = document.querySelector(".address-button");
+                var feedbackModal = document.querySelector(".feedback-modal");
+                var overlay = document.querySelector(".modal-overlay");
+                var closeModalButton = document.querySelector(".modal-close");
+                var submitButton = document.querySelector(".feedback-modal .button");
+                var inputName = document.querySelector("#modal-input-name");
+                var nameLabel = document.querySelector("#modal-input-name + label");
+
+                function showModal(modal) {
+                    modal.classList.add("show", "show-animation");
+                    overlay.classList.add("show");
+                }
+
+                function closeModal(modal) {
+                    modal.classList.remove("show");
+                    overlay.classList.remove("show");
+                }
+
+                function hideLabel(obj) {
+                    obj.style.fontSize="11px";
+                    obj.style.lineHeight="13px";
+                    obj.style.color="#5b9ddf";
+                    obj.style.top="-15px";
+                }
+
+                inputName.addEventListener("focusout", function() {
+                    if(inputName.value) {
+                        console.log("not empty");
+                        nameLabel.classList.add("label-hide");
+                        // hideLabel(nameLabel);
+                    }
+                });
+                
+                feedbackButton.addEventListener("click", function(evt) {
+                    evt.preventDefault();
+                    showModal(feedbackModal);
+                });
+
+                closeModalButton.addEventListener("click", function() {
+                    console.log("click");
+                    closeModal(feedbackModal);
+                });
+
+                overlay.addEventListener("click", function() {
+                    closeModal(feedbackModal);
+                });
+
+                submitButton.addEventListener("click", function() {
+                    closeModal(feedbackModal);
+                });
+
+                window.addEventListener("keydown", function(evt) {
+                    if(evt.keyCode == 27) {
+                        evt.preventDefault();
+                        if(feedbackModal.classList.contains("show")) {
+                            closeModal(feedbackModal);
+                        }
+                    }          
+                });
+            </script>
         </div>
     </body>
 </html> 
