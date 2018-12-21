@@ -1669,6 +1669,7 @@ figure {
     line-height: 13px;
     color: #5b9ddf;
     top: -15px;
+    transition: .3s;
 }
 
 .label-hide {
