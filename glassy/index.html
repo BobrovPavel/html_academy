@@ -4,7 +4,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
         <meta charset="utf-8" />
         <link href='css/normalize.css' rel='stylesheet' type='text/css'>
-        <link href='css/styles.css' rel='stylesheet' type='text/css'>
+        <link href='css/prefix.styles.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <input type="radio" name="slider" id="slider1" checked>
@@ -38,17 +38,21 @@
                                 <li class="ctrl-item search-item">
                                     <a href="#"></a>
                                     <form class="search-form dropdown" action="#" method="GET">
-                                        <input type="search" id="site-search" name="q" placeholder="Что ищем?" aria-label="Поиск по сайту">
-                                        <label class="search-label" for="site-search"></label>
+                                        <input type="search" id="site-search" name="q" aria-label="Поиск по сайту">
+                                        <label for="site-search">Что ищем?</label>
                                     </form>
                                 </li>
                                 <li class="ctrl-item login-item">
                                     <a href="#" class="login-link">Вход</a>
                                     <form class="login-form dropdown" action="#" method="GET">
-                                        <input type="email" id="email-field" name="em" placeholder="Электронная почта" aria-label="Электронная почта">
-                                        <label class="search-label" for="email-field"></label>
-                                        <input type="password" id="password-field" name="pas" placeholder="Пароль" aria-label="Пароль">
-                                        <label class="search-label" for="password-field"></label>
+                                        <div class="field-wrapper">
+                                            <input type="email" id="email-field" name="em" aria-label="Электронная почта">
+                                            <label for="email-field">Электронная почта</label>
+                                        </div>
+                                        <div class="field-wrapper">
+                                            <input type="password" id="password-field" name="pas" aria-label="Пароль">
+                                            <label for="password-field">Пароль</label>
+                                        </div>
                                         <div class="login-control">
                                             <button class="button" type="submit">Войти</button>
                                             <div class="choice">
@@ -245,15 +249,15 @@
                     <div class="modal-close"></div>
                     <h2 class="modal-header">Мы обязательно вам ответим!</h2>
                     <form class="feedback-form">
-                        <div class="modal-input-name-wrapper">
+                        <div class="modal-input-wrapper">
                             <input type="text" id="modal-input-name">
                             <label for="modal-input-name">Как вас зовут?</label>
                         </div>
-                        <div class="modal-input-email-wrapper">
+                        <div class="modal-input-wrapper">
                             <input type="email" id="modal-input-email">
                             <label for="modal-input-email">Ваша почта для ответа?</label>
                         </div>
-                        <div class="modal-input-message-wrapper">
+                        <div class="modal-input-wrapper">
                             <textarea id="modal-input-message"></textarea>
                             <label for="modal-input-message">Напишите что-нибудь...</label>
                         </div>
@@ -262,68 +266,7 @@
                 </section>
             </footer>
             <div class="modal modal-overlay"></div>
-            <script>
-                var modalClass = document.querySelectorAll(".modal");
-                var feedbackButton = document.querySelector(".address-button");
-                var feedbackModal = document.querySelector(".feedback-modal");
-                var overlay = document.querySelector(".modal-overlay");
-                var closeModalButton = document.querySelector(".modal-close");
-                var submitButton = document.querySelector(".feedback-modal .button");
-                var inputName = document.querySelector("#modal-input-name");
-                var nameLabel = document.querySelector("#modal-input-name + label");
-
-                function showModal(modal) {
-                    modal.classList.add("show", "show-animation");
-                    overlay.classList.add("show");
-                }
-
-                function closeModal(modal) {
-                    modal.classList.remove("show");
-                    overlay.classList.remove("show");
-                }
-
-                function hideLabel(obj) {
-                    obj.style.fontSize="11px";
-                    obj.style.lineHeight="13px";
-                    obj.style.color="#5b9ddf";
-                    obj.style.top="-15px";
-                }
-
-                inputName.addEventListener("focusout", function() {
-                    if(inputName.value) {
-                        console.log("not empty");
-                        nameLabel.classList.add("label-hide");
-                        // hideLabel(nameLabel);
-                    }
-                });
-                
-                feedbackButton.addEventListener("click", function(evt) {
-                    evt.preventDefault();
-                    showModal(feedbackModal);
-                });
-
-                closeModalButton.addEventListener("click", function() {
-                    console.log("click");
-                    closeModal(feedbackModal);
-                });
-
-                overlay.addEventListener("click", function() {
-                    closeModal(feedbackModal);
-                });
-
-                submitButton.addEventListener("click", function() {
-                    closeModal(feedbackModal);
-                });
-
-                window.addEventListener("keydown", function(evt) {
-                    if(evt.keyCode == 27) {
-                        evt.preventDefault();
-                        if(feedbackModal.classList.contains("show")) {
-                            closeModal(feedbackModal);
-                        }
-                    }          
-                });
-            </script>
+            <script src="js/index.js"></script>
         </div>
     </body>
 </html> 
