@@ -184,7 +184,7 @@ fieldset {
 .search input[type=search]+label::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/icon-search@1X.png");
+	background-image: url("../technomart/img/icon-search@1X.png");
 	background-repeat: no-repeat;
 	opacity: 0.3;
 	width: 17px;
@@ -196,12 +196,12 @@ fieldset {
 }
 
 .search input[type=search]:hover+label::before {
-	background-image: url("../img/icon-search@1X.png");
+	background-image: url("../technomart/img/icon-search@1X.png");
 	opacity: 1;
 }
 
 .search input[type=search]:focus+label::before {
-	background-image: url("../img/icon-search-red.png");
+	background-image: url("../technomart/img/icon-search-red.png");
 	opacity: 1;
 }
 
@@ -275,7 +275,7 @@ fieldset {
 	height: 16px;
 	position: absolute;
 	left: 20px;
-	background-image: url("../img/bookmark3@1X.png");
+	background-image: url("../technomart/img/bookmark3@1X.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	opacity: 0.3;
@@ -317,7 +317,7 @@ fieldset {
 	height: 16px;
 	position: absolute;
 	left: 20px;
-	background-image: url("../img/cart-2@1X.png");
+	background-image: url("../technomart/img/cart-2@1X.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	opacity: 0.3;
@@ -426,7 +426,7 @@ fieldset {
 .column-contacts a::before {
 	content: "";
 	position: absolute;
-	background-image: url("../img/icon-phone@1X.png");
+	background-image: url("../technomart/img/icon-phone@1X.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	width: 19px;
@@ -496,7 +496,7 @@ fieldset {
 .log-login::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/icon-login@1X.png");
+	background-image: url("../technomart/img/icon-login@1X.png");
 	width: 20px;
 	height: 17px;
 	left: 10px;
@@ -639,7 +639,7 @@ fieldset {
 	position: absolute;
 	width: 44px;
 	height: 65px;
-	background-image: url("../img/icon-1@1X.png");
+	background-image: url("../technomart/img/icon-1@1X.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	left: 210px;
@@ -655,7 +655,7 @@ fieldset {
 	position: absolute;
 	width: 75px;
 	height: 61px;
-	background-image: url("../img/icon-2@1X.png");
+	background-image: url("../technomart/img/icon-2@1X.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	left: 197px;
@@ -671,7 +671,7 @@ fieldset {
 	position: absolute;
 	width: 76px;
 	height: 62px;
-	background-image: url("../img/icon-3@1X.png");
+	background-image: url("../technomart/img/icon-3@1X.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	left: 191px;
@@ -687,7 +687,7 @@ fieldset {
 	position: absolute;
 	width: 59px;
 	height: 72px;
-	background-image: url("../img/icon-4@1X.png");
+	background-image: url("../technomart/img/icon-4@1X.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	left: 196px;
@@ -703,7 +703,7 @@ fieldset {
 	position: absolute;
 	width: 78px;
 	height: 63px;
-	background-image: url("../img/icon-5@1X.png");
+	background-image: url("../technomart/img/icon-5@1X.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	left: 191px;
@@ -763,7 +763,7 @@ fieldset {
 
 .bottom-slider input:checked:nth-child(1)~.bottom-slides .bottom-slide1 {
 	display: block;
-	background-image: url("../img/slide-image-1.png");
+	background-image: url("../technomart/img/slide-image-1.png");
 }
 
 .bottom-slider input:checked:nth-child(1)~.bottom-slider-controls label:nth-child(1) {
@@ -773,7 +773,7 @@ fieldset {
 
 .bottom-slider input:checked:nth-child(2)~.bottom-slides .bottom-slide2 {
 	display: block;
-	background-image: url("../img/slide-image-2.png");
+	background-image: url("../technomart/img/slide-image-2.png");
 }
 
 .bottom-slider input:checked:nth-child(2)~.bottom-slider-controls label:nth-child(2) {
@@ -783,7 +783,7 @@ fieldset {
 
 .bottom-slider input:checked:nth-child(3)~.bottom-slides .bottom-slide3 {
 	display: block;
-	background-image: url("../img/slide-image-3.png");
+	background-image: url("../technomart/img/slide-image-3.png");
 }
 
 .bottom-slider input:checked:nth-child(3)~.bottom-slider-controls label:nth-child(3) {
@@ -825,7 +825,7 @@ fieldset {
 .slider-control-left::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/icon-left@1X.png");
+	background-image: url("../technomart/img/icon-left@1X.png");
 	background-repeat: no-repeat;
 	width: 22px;
 	height: 40px;
@@ -854,7 +854,7 @@ fieldset {
 .slider-control-right::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/icon-right@1X.png");
+	background-image: url("../technomart/img/icon-right@1X.png");
 	background-repeat: no-repeat;
 	width: 22px;
 	height: 40px;
@@ -897,7 +897,7 @@ fieldset {
 }
 
 .slide1 {
-	background-image: url("../img/slider2.png");
+	background-image: url("../technomart/img/slider2.png");
 	background-position: top left;
 	background-repeat: no-repeat;
 	color: white;
@@ -906,7 +906,7 @@ fieldset {
 }
 
 .slide2 {
-	background-image: url("../img/slider 1234.png");
+	background-image: url("../technomart/img/slider 1234.png");
 	background-position: top left;
 	background-repeat: no-repeat;
 	color: white;
@@ -995,7 +995,7 @@ fieldset {
 .new::after {
 	position: absolute;
 	content: "";
-	background-image: url("../img/new flag@1X.png");
+	background-image: url("../technomart/img/new flag@1X.png");
 	width: 60px;
 	height: 59px;
 	background-repeat: no-repeat;
@@ -1227,7 +1227,7 @@ fieldset {
 .bottom-slider-controls::before {
     content: "";
     position: absolute;
-    background-image: url("../img/shadow.png");
+    background-image: url("../technomart/img/shadow.png");
     background-repeat: no-repeat;
     width: 15px;
     height: 284px;
@@ -1549,7 +1549,7 @@ fieldset {
 	width: 26px;
 	height: 15px;
 	position: absolute;
-	background-image: url("../img/vk-icon@1X.png");
+	background-image: url("../technomart/img/vk-icon@1X.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	top: 0;
@@ -1564,7 +1564,7 @@ fieldset {
 	width: 12px;
 	height: 22px;
 	position: absolute;
-	background-image: url("../img/fb-icon.png");
+	background-image: url("../technomart/img/fb-icon.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	top: 0;
@@ -1579,7 +1579,7 @@ fieldset {
 	width: 21px;
 	height: 21px;
 	position: absolute;
-	background-image: url("../img/insta-icon.png");
+	background-image: url("../technomart/img/insta-icon.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	top: 0;
@@ -1733,7 +1733,7 @@ fieldset {
 .breadcrumbs li:nth-child(1) a::before {
 	content: "";
 	position: absolute;
-	background-image: url("../img/icon-home.png");
+	background-image: url("../technomart/img/icon-home.png");
 	width: 14px;
 	height: 12px;
 	background-repeat: no-repeat;
@@ -1752,7 +1752,7 @@ fieldset {
 .breadcrumbs li:not(:last-child)::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/icon-right-small.png");
+	background-image: url("../technomart/img/icon-right-small.png");
 	width: 8px;
 	height: 12px;
 	background-repeat: no-repeat;
@@ -1947,7 +1947,7 @@ fieldset {
 .checkboxes input[type=checkbox]+label::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/checkbox-off-hover.png");
+	background-image: url("../technomart/img/checkbox-off-hover.png");
 	background-repeat: no-repeat;
 	width: 27px;
 	height: 23px;
@@ -1959,7 +1959,7 @@ fieldset {
 .checkboxes input[type=checkbox]:checked+label::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/checkbox-on-hover.png");
+	background-image: url("../technomart/img/checkbox-on-hover.png");
 	background-repeat: no-repeat;
 	width: 27px;
 	height: 23px;
@@ -2027,7 +2027,7 @@ fieldset {
 .radioboxes input[type=radio]+label::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/radio-off-hover.png");
+	background-image: url("../technomart/img/radio-off-hover.png");
 	background-repeat: no-repeat;
 	width: 25px;
 	height: 25px;
@@ -2039,7 +2039,7 @@ fieldset {
 .radioboxes input[type=radio]:checked+label::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/radio-on-hover.png");
+	background-image: url("../technomart/img/radio-on-hover.png");
 	background-repeat: no-repeat;
 	width: 25px;
 	height: 25px;
@@ -2177,14 +2177,14 @@ fieldset {
 
 .asc a {
 	border: none;
-	background-image: url("../img/top-gray.png");
+	background-image: url("../technomart/img/top-gray.png");
 	background-repeat: no-repeat;
 	width: 11px;
 	height: 10px;
 }
 
 .asc.current-sort a {
-	background-image: url("../img/top-red.png");
+	background-image: url("../technomart/img/top-red.png");
 	background-repeat: no-repeat;
 	width: 11px;
 	height: 10px;
@@ -2192,7 +2192,7 @@ fieldset {
 
 .asc a:hover:not(.asc.current-sort),
 .asc a:focus:not(.asc.current-sort) {
-	background-image: url("../img/top-black.png");
+	background-image: url("../technomart/img/top-black.png");
 	background-repeat: no-repeat;
 	width: 11px;
 	height: 10px;
@@ -2200,7 +2200,7 @@ fieldset {
 
 .desc a {
 	border: none;
-	background-image: url("../img/bottom-gray.png");
+	background-image: url("../technomart/img/bottom-gray.png");
 	background-repeat: no-repeat;
 	width: 11px;
 	height: 10px;
@@ -2208,14 +2208,14 @@ fieldset {
 
 .desc a:hover:not(.desc.current-sort),
 .desc a:focus:not(.desc.current-sort) {
-	background-image: url("../img/bottom-black.png");
+	background-image: url("../technomart/img/bottom-black.png");
 	background-repeat: no-repeat;
 	width: 11px;
 	height: 10px;
 }
 
 .desc.current-sort a {
-	background-image: url("../img/bottom-red.png");
+	background-image: url("../technomart/img/bottom-red.png");
 	background-repeat: no-repeat;
 	width: 11px;
 	height: 10px;
@@ -2348,7 +2348,7 @@ fieldset {
 .catalog-button-buy::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/cart-icon.png");
+	background-image: url("../technomart/img/cart-icon.png");
 	width: 15px;
 	height: 15px;
 	background-repeat: no-repeat;
@@ -2458,7 +2458,7 @@ iframe {
 .modal-close {
 	content: "";
 	position: absolute;
-	background-image: url("../img/form-2@1X.png");
+	background-image: url("../technomart/img/form-2@1X.png");
 	background-repeat: no-repeat;
 	width: 21px;
 	height: 21px;
@@ -2582,7 +2582,7 @@ iframe {
 .modal-added .row-1:before {
 	content: "";
 	position: absolute;
-	background-image: url("../img/form-1@1X.png");
+	background-image: url("../technomart/img/form-1@1X.png");
 	width: 66px;
 	height: 66px;
 	top: 50%;
@@ -2653,7 +2653,7 @@ iframe {
 .profile-icon::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/icon-user.png");
+	background-image: url("../technomart/img/icon-user.png");
 	background-repeat: no-repeat;
 	width: 20px;
 	height: 18px;
@@ -2673,7 +2673,7 @@ iframe {
 .logout::before {
 	position: absolute;
 	content: "";
-	background-image: url("../img/icon-logout.png");
+	background-image: url("../technomart/img/icon-logout.png");
 	background-repeat: no-repeat;
 	width: 20px;
 	height: 17px;
